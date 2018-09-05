@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Fill
+ * \foTYPE\PhpPresentation\Style\Fill
  */
 class Fill implements ComparableInterface
 {
@@ -64,14 +64,14 @@ class Fill implements ComparableInterface
     /**
      * Start color
      *
-     * @var \PhpOffice\PhpPresentation\Style\Color
+     * @var \foTYPE\PhpPresentation\Style\Color
      */
     private $startColor;
 
     /**
      * End color
      *
-     * @var \PhpOffice\PhpPresentation\Style\Color
+     * @var \foTYPE\PhpPresentation\Style\Color
      */
     private $endColor;
 
@@ -83,7 +83,7 @@ class Fill implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Fill
+     * Create a new \foTYPE\PhpPresentation\Style\Fill
      */
     public function __construct()
     {
@@ -107,8 +107,8 @@ class Fill implements ComparableInterface
     /**
      * Set Fill Type
      *
-     * @param  string                   $pValue \PhpOffice\PhpPresentation\Style\Fill fill type
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @param  string                   $pValue \foTYPE\PhpPresentation\Style\Fill fill type
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function setFillType($pValue = self::FILL_NONE)
     {
@@ -131,7 +131,7 @@ class Fill implements ComparableInterface
      * Set Rotation
      *
      * @param float|int $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function setRotation($pValue = 0)
     {
@@ -143,7 +143,7 @@ class Fill implements ComparableInterface
     /**
      * Get Start Color
      *
-     * @return \PhpOffice\PhpPresentation\Style\Color
+     * @return \foTYPE\PhpPresentation\Style\Color
      */
     public function getStartColor()
     {
@@ -155,9 +155,9 @@ class Fill implements ComparableInterface
     /**
      * Set Start Color
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Color $pValue
+     * @param  \foTYPE\PhpPresentation\Style\Color $pValue
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function setStartColor(Color $pValue = null)
     {
@@ -169,7 +169,7 @@ class Fill implements ComparableInterface
     /**
      * Get End Color
      *
-     * @return \PhpOffice\PhpPresentation\Style\Color
+     * @return \foTYPE\PhpPresentation\Style\Color
      */
     public function getEndColor()
     {
@@ -181,9 +181,9 @@ class Fill implements ComparableInterface
     /**
      * Set End Color
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Color $pValue
+     * @param  \foTYPE\PhpPresentation\Style\Color $pValue
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function setEndColor(Color $pValue = null)
     {

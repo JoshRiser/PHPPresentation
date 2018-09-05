@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 use PhpOffice\Common\Drawing;
 
 /**
- * \PhpOffice\PhpPresentation\DocumentLayout
+ * \foTYPE\PhpPresentation\DocumentLayout
  */
 class DocumentLayout
 {
@@ -86,7 +86,7 @@ class DocumentLayout
     private $dimensionY;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\DocumentLayout
+     * Create a new \foTYPE\PhpPresentation\DocumentLayout
      */
     public function __construct()
     {
@@ -108,7 +108,7 @@ class DocumentLayout
      *
      * @param array|string $pValue
      * @param  boolean $isLandscape
-     * @return \PhpOffice\PhpPresentation\DocumentLayout
+     * @return \foTYPE\PhpPresentation\DocumentLayout
      */
     public function setDocumentLayout($pValue = self::LAYOUT_SCREEN_4X3, $isLandscape = true)
     {

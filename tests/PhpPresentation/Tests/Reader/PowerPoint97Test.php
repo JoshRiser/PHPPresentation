@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Reader;
+namespace foTYPE\PhpPresentation\Tests\Reader;
 
-use PhpOffice\PhpPresentation\Reader\PowerPoint97;
+use foTYPE\PhpPresentation\Reader\PowerPoint97;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PowerPoint97 reader
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Reader\PowerPoint97
+ * @coversDefaultClass foTYPE\PhpPresentation\Reader\PowerPoint97
  */
 class PowerPoint97Test extends TestCase
 {
@@ -62,7 +62,7 @@ class PowerPoint97Test extends TestCase
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage Invalid file format for PhpOffice\PhpPresentation\Reader\PowerPoint97:
+     * @expectedExceptionMessage Invalid file format for foTYPE\PhpPresentation\Reader\PowerPoint97:
      */
     public function testLoadFileBadFormat()
     {

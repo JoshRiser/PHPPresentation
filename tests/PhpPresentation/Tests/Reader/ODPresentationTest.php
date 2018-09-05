@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Reader;
+namespace foTYPE\PhpPresentation\Tests\Reader;
 
-use PhpOffice\PhpPresentation\Reader\ODPresentation;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Reader\ODPresentation;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for ODPresentation reader
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Reader\ODPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\Reader\ODPresentation
  */
 class ODPresentationTest extends TestCase
 {
@@ -61,7 +61,7 @@ class ODPresentationTest extends TestCase
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage Invalid file format for PhpOffice\PhpPresentation\Reader\ODPresentation:
+     * @expectedExceptionMessage Invalid file format for foTYPE\PhpPresentation\Reader\ODPresentation:
      */
     public function testLoadFileBadFormat()
     {

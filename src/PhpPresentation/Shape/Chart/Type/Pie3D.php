@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
  * self

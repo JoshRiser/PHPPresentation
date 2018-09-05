@@ -9,7 +9,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Comment;
+    use foTYPE\PhpPresentation\Shape\Comment;
 
     $oComment = new Comment();
     $oSlide->addShape($oComment);
@@ -20,7 +20,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Comment;
+    use foTYPE\PhpPresentation\Shape\Comment;
 
     $oComment = new Comment();
     $oComment->setText('Text of the Comment');
@@ -36,8 +36,8 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Comment;
-    use PhpOffice\PhpPresentation\Shape\Comment\Author;
+    use foTYPE\PhpPresentation\Shape\Comment;
+    use foTYPE\PhpPresentation\Shape\Comment\Author;
 
     $oAuthor = new Author();
     $oComment = new Comment();
@@ -50,8 +50,8 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Comment;
-    use PhpOffice\PhpPresentation\Shape\Comment\Author;
+    use foTYPE\PhpPresentation\Shape\Comment;
+    use foTYPE\PhpPresentation\Shape\Comment\Author;
 
     $oAuthor = new Author();
     $oAuthor->setName('Name of the author');

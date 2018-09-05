@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\RichText;
+namespace foTYPE\PhpPresentation\Shape\RichText;
 
 /**
  * Rich text break
@@ -23,7 +23,7 @@ namespace PhpOffice\PhpPresentation\Shape\RichText;
 class BreakElement implements TextElementInterface
 {
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\RichText\Break instance
+     * Create a new \foTYPE\PhpPresentation\Shape\RichText\Break instance
      */
     public function __construct()
     {
@@ -43,7 +43,7 @@ class BreakElement implements TextElementInterface
      * Set text
      *
      * @param                                            $pText string   Text
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setText($pText = '')
     {
@@ -53,7 +53,7 @@ class BreakElement implements TextElementInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -64,7 +64,7 @@ class BreakElement implements TextElementInterface
      * Set language
      *
      * @param $lang
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setLanguage($lang)
     {

@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Marker;
+use foTYPE\PhpPresentation\Shape\Chart\Marker;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Legend element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Marker
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Marker
  */
 class MarkerTest extends TestCase
 {

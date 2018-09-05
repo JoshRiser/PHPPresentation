@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Axis
+ * \foTYPE\PhpPresentation\Shape\Chart\Axis
  */
 class Marker
 {

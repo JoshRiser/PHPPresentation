@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Slide\Background;
+namespace foTYPE\PhpPresentation\Slide\Background;
 
-use PhpOffice\PhpPresentation\Slide\AbstractBackground;
+use foTYPE\PhpPresentation\Slide\AbstractBackground;
 
 class Image extends AbstractBackground
 {
@@ -44,7 +44,7 @@ class Image extends AbstractBackground
      * @param  string                      $pValue      File path
      * @param  boolean                     $pVerifyFile Verify file
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\Drawing
+     * @return \foTYPE\PhpPresentation\Shape\Drawing
      */
     public function setPath($pValue = '', $pVerifyFile = true)
     {

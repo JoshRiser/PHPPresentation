@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Slide\Note;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Slide\Note;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class NoteTest extends TestCase
 {

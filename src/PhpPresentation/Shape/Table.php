@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Shape\Table\Row;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Shape\Table\Row;
 
 /**
  * Table shape
@@ -28,7 +28,7 @@ class Table extends AbstractGraphic implements ComparableInterface
     /**
      * Rows
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Table\Row[]
+     * @var \foTYPE\PhpPresentation\Shape\Table\Row[]
      */
     private $rows;
 
@@ -40,7 +40,7 @@ class Table extends AbstractGraphic implements ComparableInterface
     private $columnCount = 1;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Table instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Table instance
      *
      * @param int $columns Number of columns
      */
@@ -63,7 +63,7 @@ class Table extends AbstractGraphic implements ComparableInterface
      * @param  int $row Row number
      * @param  boolean $exceptionAsNull Return a null value instead of an exception?
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Row
+     * @return \foTYPE\PhpPresentation\Shape\Table\Row
      */
     public function getRow($row = 0, $exceptionAsNull = false)
     {
@@ -80,7 +80,7 @@ class Table extends AbstractGraphic implements ComparableInterface
     /**
      * Get rows
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Row[]
+     * @return \foTYPE\PhpPresentation\Shape\Table\Row[]
      */
     public function getRows()
     {
@@ -90,7 +90,7 @@ class Table extends AbstractGraphic implements ComparableInterface
     /**
      * Create row
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Row
+     * @return \foTYPE\PhpPresentation\Shape\Table\Row
      */
     public function createRow()
     {

@@ -2,8 +2,8 @@
 
 include_once 'Sample_Header.php';
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Slide\Animation;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Slide\Animation;
 
 // Create new PHPPresentation object
 echo date('H:i:s') . ' Create new PHPPresentation object' . EOL;

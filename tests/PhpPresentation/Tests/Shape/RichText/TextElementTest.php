@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\RichText;
+namespace foTYPE\PhpPresentation\Tests\Shape\RichText;
 
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for TextElement element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\RichText\TextElement
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\RichText\TextElement
  */
 class TextElementTest extends TestCase
 {

@@ -15,16 +15,16 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased
+ * \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased
  * @deprecated 0.7
  */
 class TemplateBased extends AbstractLayoutPack
 {
     /**
-     * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased
+     * \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased
      *
      * @param string $fileName
      * @throws \Exception
@@ -149,7 +149,7 @@ class TemplateBased extends AbstractLayoutPack
 
         // Sort master slides
         usort($this->masterSlides, array(
-            "\PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased",
+            "\foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased",
             "cmpMaster"
         ));
 

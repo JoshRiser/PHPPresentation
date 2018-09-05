@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Writer;
+namespace foTYPE\PhpPresentation\Tests\Writer;
 
-use PhpOffice\PhpPresentation\Writer\Serialized;
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Writer\Serialized;
+use foTYPE\PhpPresentation\PhpPresentation;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for serialized reader
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Reader\Serialized
+ * @coversDefaultClass foTYPE\PhpPresentation\Reader\Serialized
  */
 class SerializedTest extends TestCase
 {

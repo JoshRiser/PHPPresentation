@@ -14,10 +14,10 @@
  * @copyright   2009-2015 PHPPresentation contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
- * \PhpOffice\PhpPresentation\PresentationProperties
+ * \foTYPE\PhpPresentation\PresentationProperties
  */
 class PresentationProperties
 {
@@ -83,7 +83,7 @@ class PresentationProperties
     
     /**
      * @param bool $value
-     * @return \PhpOffice\PhpPresentation\PresentationProperties
+     * @return \foTYPE\PhpPresentation\PresentationProperties
      */
     public function setLoopContinuouslyUntilEsc($value = false)
     {
@@ -105,7 +105,7 @@ class PresentationProperties
     /**
      * Define the path for the thumbnail file / preview picture
      * @param string $path
-     * @return \PhpOffice\PhpPresentation\PresentationProperties
+     * @return \foTYPE\PhpPresentation\PresentationProperties
      */
     public function setThumbnailPath($path = '')
     {

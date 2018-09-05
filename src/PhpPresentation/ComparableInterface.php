@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
- * PhpOffice\PhpPresentation\ComparableInterface
+ * foTYPE\PhpPresentation\ComparableInterface
  */
 interface ComparableInterface
 {

@@ -15,54 +15,54 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Borders
+ * \foTYPE\PhpPresentation\Style\Borders
  */
 class Borders implements ComparableInterface
 {
     /**
      * Left
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $left;
 
     /**
      * Right
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $right;
 
     /**
      * Top
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $top;
 
     /**
      * Bottom
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $bottom;
 
     /**
      * Diagonal up
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $diagonalUp;
 
     /**
      * Diagonal down
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $diagonalDown;
 
@@ -74,7 +74,7 @@ class Borders implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Borders
+     * Create a new \foTYPE\PhpPresentation\Style\Borders
      */
     public function __construct()
     {
@@ -92,7 +92,7 @@ class Borders implements ComparableInterface
     /**
      * Get Left
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getLeft()
     {
@@ -102,7 +102,7 @@ class Borders implements ComparableInterface
     /**
      * Get Right
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getRight()
     {
@@ -112,7 +112,7 @@ class Borders implements ComparableInterface
     /**
      * Get Top
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getTop()
     {
@@ -122,7 +122,7 @@ class Borders implements ComparableInterface
     /**
      * Get Bottom
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getBottom()
     {
@@ -132,7 +132,7 @@ class Borders implements ComparableInterface
     /**
      * Get Diagonal Up
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getDiagonalUp()
     {
@@ -142,7 +142,7 @@ class Borders implements ComparableInterface
     /**
      * Get Diagonal Down
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getDiagonalDown()
     {

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Shape\Chart\Type;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar
+ * \foTYPE\PhpPresentation\Shape\Chart\Type\Bar
  */
 class AbstractTypeBar extends AbstractType
 {
@@ -60,7 +60,7 @@ class AbstractTypeBar extends AbstractType
      * Set bar orientation
      *
      * @param string                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Type\Bar
      */
     public function setBarDirection($value = self::DIRECTION_VERTICAL)
     {
@@ -82,7 +82,7 @@ class AbstractTypeBar extends AbstractType
      * Set bar grouping (stack or expanded style bar)
      *
      * @param string                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Type\Bar
      */
     public function setBarGrouping($value = self::GROUPING_CLUSTERED)
     {

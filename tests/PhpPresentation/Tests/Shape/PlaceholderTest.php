@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Shape\Placeholder;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Table element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Table
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Table
  */
 class PlaceholderTest extends TestCase
 {
@@ -46,7 +46,7 @@ class PlaceholderTest extends TestCase
 
     public function testType()
     {
-        $rcPlaceholder = new \ReflectionClass('PhpOffice\PhpPresentation\Shape\Placeholder');
+        $rcPlaceholder = new \ReflectionClass('foTYPE\PhpPresentation\Shape\Placeholder');
         $arrayConstants = $rcPlaceholder->getConstants();
         $value = array_rand($arrayConstants);
 

@@ -75,7 +75,7 @@ The width is in pixels.
 	$tableShape = $slide->createTableShape($columns);
 	$row = $tableShape->createRow();
 	$cellA1 = $row->nextCell();
-	$cellA1->getAlignment()->setTextDirection(\PhpOffice\PhpPresentation\Style\Alignment::TEXT_DIRECTION_VERTICAL_270);
+	$cellA1->getAlignment()->setTextDirection(\foTYPE\PhpPresentation\Style\Alignment::TEXT_DIRECTION_VERTICAL_270);
 
 Define the width of a cell
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

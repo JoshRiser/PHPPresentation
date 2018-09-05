@@ -15,21 +15,21 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\GeometryCalculator;
-use PHPOffice\PhpPresentation\ShapeContainerInterface;
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\Table;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\GeometryCalculator;
+use foTYPE\PhpPresentation\ShapeContainerInterface;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\Table;
 
 class Group extends AbstractShape implements ShapeContainerInterface
 {
     /**
     * Collection of shapes
     *
-    * @var \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+    * @var \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
     */
     private $shapeCollection = null;
 
@@ -72,8 +72,8 @@ class Group extends AbstractShape implements ShapeContainerInterface
     /**
     * Add shape to slide
     *
-    * @param  \PhpOffice\PhpPresentation\AbstractShape $shape
-    * @return \PhpOffice\PhpPresentation\AbstractShape
+    * @param  \foTYPE\PhpPresentation\AbstractShape $shape
+    * @return \foTYPE\PhpPresentation\AbstractShape
     */
     public function addShape(AbstractShape $shape)
     {
@@ -193,7 +193,7 @@ class Group extends AbstractShape implements ShapeContainerInterface
     /**
     * Create rich text shape
     *
-    * @return \PhpOffice\PhpPresentation\Shape\RichText
+    * @return \foTYPE\PhpPresentation\Shape\RichText
     */
     public function createRichTextShape()
     {
@@ -210,7 +210,7 @@ class Group extends AbstractShape implements ShapeContainerInterface
     * @param  int                      $fromY Starting point y offset
     * @param  int                      $toX   Ending point x offset
     * @param  int                      $toY   Ending point y offset
-    * @return \PhpOffice\PhpPresentation\Shape\Line
+    * @return \foTYPE\PhpPresentation\Shape\Line
     */
     public function createLineShape($fromX, $fromY, $toX, $toY)
     {
@@ -223,7 +223,7 @@ class Group extends AbstractShape implements ShapeContainerInterface
     /**
     * Create chart shape
     *
-    * @return \PhpOffice\PhpPresentation\Shape\Chart
+    * @return \foTYPE\PhpPresentation\Shape\Chart
     */
     public function createChartShape()
     {
@@ -236,7 +236,7 @@ class Group extends AbstractShape implements ShapeContainerInterface
     /**
     * Create drawing shape
     *
-    * @return \PhpOffice\PhpPresentation\Shape\Drawing\File
+    * @return \foTYPE\PhpPresentation\Shape\Drawing\File
     */
     public function createDrawingShape()
     {
@@ -250,7 +250,7 @@ class Group extends AbstractShape implements ShapeContainerInterface
     * Create table shape
     *
     * @param  int                       $columns Number of columns
-    * @return \PhpOffice\PhpPresentation\Shape\Table
+    * @return \foTYPE\PhpPresentation\Shape\Table
     */
     public function createTableShape($columns = 1)
     {

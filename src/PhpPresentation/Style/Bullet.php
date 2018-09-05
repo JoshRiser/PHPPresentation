@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Bullet
+ * \foTYPE\PhpPresentation\Style\Bullet
  */
 class Bullet implements ComparableInterface
 {
@@ -123,7 +123,7 @@ class Bullet implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Bullet
+     * Create a new \foTYPE\PhpPresentation\Style\Bullet
      */
     public function __construct()
     {
@@ -150,7 +150,7 @@ class Bullet implements ComparableInterface
      * Set bullet type
      *
      * @param  string                     $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function setBulletType($pValue = self::TYPE_NONE)
     {
@@ -173,7 +173,7 @@ class Bullet implements ComparableInterface
      * Set bullet font
      *
      * @param  string                     $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function setBulletFont($pValue = 'Calibri')
     {
@@ -199,7 +199,7 @@ class Bullet implements ComparableInterface
      * Set bullet char
      *
      * @param  string                     $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function setBulletChar($pValue = '-')
     {
@@ -222,7 +222,7 @@ class Bullet implements ComparableInterface
      * Set bullet numeric style
      *
      * @param  string                     $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function setBulletNumericStyle($pValue = self::NUMERIC_DEFAULT)
     {
@@ -245,7 +245,7 @@ class Bullet implements ComparableInterface
      * Set bullet numeric start at
      *
      * @param int|string $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function setBulletNumericStartAt($pValue = 1)
     {

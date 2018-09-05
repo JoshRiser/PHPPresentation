@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\DocumentLayout;
 
 class PptPresentation extends AbstractDecoratorWriter
 {

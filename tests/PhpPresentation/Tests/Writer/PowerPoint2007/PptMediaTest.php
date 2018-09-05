@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Tests\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\PowerPoint2007\PptMedia
+ * Test class for foTYPE\PhpPresentation\Writer\PowerPoint2007\PptMedia
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\PowerPoint2007\PptMedia
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\PowerPoint2007\PptMedia
  */
 class PptMediaTest extends PhpPresentationTestCase
 {

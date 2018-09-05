@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Bar element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Type\Bar
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Type\Bar
  */
 class BarTest extends TestCase
 {

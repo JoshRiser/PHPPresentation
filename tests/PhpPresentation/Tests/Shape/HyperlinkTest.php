@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for hyperlink element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Hyperlink
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Hyperlink
  */
 class HyperlinkTest extends TestCase
 {

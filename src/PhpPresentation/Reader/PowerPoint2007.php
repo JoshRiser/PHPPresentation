@@ -15,26 +15,26 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Reader;
+namespace foTYPE\PhpPresentation\Reader;
 
-use PhpOffice\PhpPresentation\DocumentLayout;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Placeholder;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
-use PhpOffice\PhpPresentation\Shape\Table\Cell;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\AbstractSlide;
-use PhpOffice\PhpPresentation\Slide\SlideLayout;
-use PhpOffice\PhpPresentation\Slide\SlideMaster;
-use PhpOffice\PhpPresentation\Shape\Drawing\Gd;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Borders;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\SchemeColor;
-use PhpOffice\PhpPresentation\Style\TextStyle;
+use foTYPE\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
+use foTYPE\PhpPresentation\Shape\Table\Cell;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\AbstractSlide;
+use foTYPE\PhpPresentation\Slide\SlideLayout;
+use foTYPE\PhpPresentation\Slide\SlideMaster;
+use foTYPE\PhpPresentation\Shape\Drawing\Gd;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Borders;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\SchemeColor;
+use foTYPE\PhpPresentation\Style\TextStyle;
 use PhpOffice\Common\XMLReader;
 use PhpOffice\Common\Drawing as CommonDrawing;
 use ZipArchive;
@@ -72,7 +72,7 @@ class PowerPoint2007 implements ReaderInterface
     protected $fileRels;
 
     /**
-     * Can the current \PhpOffice\PhpPresentation\Reader\ReaderInterface read the file?
+     * Can the current \foTYPE\PhpPresentation\Reader\ReaderInterface read the file?
      *
      * @param  string $pFilename
      * @throws \Exception
@@ -113,14 +113,14 @@ class PowerPoint2007 implements ReaderInterface
      * Loads PhpPresentation Serialized file
      *
      * @param  string $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      * @throws \Exception
      */
     public function load($pFilename)
     {
         // Unserialize... First make sure the file supports it!
         if (!$this->fileSupportsUnserializePhpPresentation($pFilename)) {
-            throw new \Exception("Invalid file format for PhpOffice\PhpPresentation\Reader\PowerPoint2007: " . $pFilename . ".");
+            throw new \Exception("Invalid file format for foTYPE\PhpPresentation\Reader\PowerPoint2007: " . $pFilename . ".");
         }
 
         return $this->loadFile($pFilename);
@@ -130,7 +130,7 @@ class PowerPoint2007 implements ReaderInterface
      * Load PhpPresentation Serialized file
      *
      * @param  string $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      */
     protected function loadFile($pFilename)
     {

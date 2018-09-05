@@ -14,11 +14,11 @@
  * @copyright   2009-2015 PHPPresentation contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\ShapeContainerInterface;
-use PhpOffice\PhpPresentation\Style\ColorMap;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ShapeContainerInterface;
+use foTYPE\PhpPresentation\Style\ColorMap;
 
 class SlideLayout extends AbstractSlide implements ComparableInterface, ShapeContainerInterface
 {
@@ -50,7 +50,7 @@ class SlideLayout extends AbstractSlide implements ComparableInterface, ShapeCon
     /**
      * Mapping of colors to the theme
      *
-     * @var \PhpOffice\PhpPresentation\Style\ColorMap
+     * @var \foTYPE\PhpPresentation\Style\ColorMap
      */
     public $colorMap;
 

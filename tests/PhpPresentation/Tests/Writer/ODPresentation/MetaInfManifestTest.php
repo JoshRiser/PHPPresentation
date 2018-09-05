@@ -1,16 +1,16 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Tests\Writer\ODPresentation;
 
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\ODPresentation\Manifest
+ * Test class for foTYPE\PhpPresentation\Writer\ODPresentation\Manifest
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\ODPresentation\Manifest
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\ODPresentation\Manifest
  */
 class MetaInfManifestTest extends PhpPresentationTestCase
 {

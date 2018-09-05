@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Pie3D element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D
  */
 class Pie3DTest extends TestCase
 {

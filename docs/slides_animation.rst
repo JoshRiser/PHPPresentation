@@ -7,7 +7,7 @@ You can create multiples animations in a slide.
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Slide\Animation;
+    use foTYPE\PhpPresentation\Slide\Animation;
 
     $oAnimation1 = new Animation();
     $oAnimation1->addShape($oDrawing);

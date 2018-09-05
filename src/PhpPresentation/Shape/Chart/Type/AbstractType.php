@@ -15,13 +15,13 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Type
+ * \foTYPE\PhpPresentation\Shape\Chart\Type
  */
 abstract class AbstractType implements ComparableInterface
 {
@@ -103,7 +103,7 @@ abstract class AbstractType implements ComparableInterface
     /**
      * Add Series
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Series $value
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Series $value
      * @return self
      */
     public function addSeries(Series $value)
@@ -115,7 +115,7 @@ abstract class AbstractType implements ComparableInterface
     /**
      * Get Series
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Series[]
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Series[]
      */
     public function getSeries()
     {
@@ -125,7 +125,7 @@ abstract class AbstractType implements ComparableInterface
     /**
      * Set Series
      *
-     * @param  array $value Array of \PhpOffice\PhpPresentation\Shape\Chart\Series
+     * @param  array $value Array of \foTYPE\PhpPresentation\Shape\Chart\Series
      * @return self
      */
     public function setSeries($value = array())

@@ -15,43 +15,43 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\RichText;
+namespace foTYPE\PhpPresentation\Shape\RichText;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Font;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+ * \foTYPE\PhpPresentation\Shape\RichText\Paragraph
  */
 class Paragraph implements ComparableInterface
 {
     /**
      * Rich text elements
      *
-     * @var \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface[]
+     * @var \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface[]
      */
     private $richTextElements;
 
     /**
      * Alignment
      *
-     * @var \PhpOffice\PhpPresentation\Style\Alignment
+     * @var \foTYPE\PhpPresentation\Style\Alignment
      */
     private $alignment;
 
     /**
      * Font
      *
-     * @var \PhpOffice\PhpPresentation\Style\Font
+     * @var \foTYPE\PhpPresentation\Style\Font
      */
     private $font;
 
     /**
      * Bullet style
      *
-     * @var \PhpOffice\PhpPresentation\Style\Bullet
+     * @var \foTYPE\PhpPresentation\Style\Bullet
      */
     private $bulletStyle;
 
@@ -68,7 +68,7 @@ class Paragraph implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\RichText\Paragraph instance
+     * Create a new \foTYPE\PhpPresentation\Shape\RichText\Paragraph instance
      */
     public function __construct()
     {
@@ -82,7 +82,7 @@ class Paragraph implements ComparableInterface
     /**
      * Get alignment
      *
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function getAlignment()
     {
@@ -92,8 +92,8 @@ class Paragraph implements ComparableInterface
     /**
      * Set alignment
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Alignment $alignment
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @param  \foTYPE\PhpPresentation\Style\Alignment $alignment
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setAlignment(Alignment $alignment)
     {
@@ -105,7 +105,7 @@ class Paragraph implements ComparableInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -115,9 +115,9 @@ class Paragraph implements ComparableInterface
     /**
      * Set font
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Font $pFont Font
+     * @param  \foTYPE\PhpPresentation\Style\Font $pFont Font
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setFont(Font $pFont = null)
     {
@@ -129,7 +129,7 @@ class Paragraph implements ComparableInterface
     /**
      * Get bullet style
      *
-     * @return \PhpOffice\PhpPresentation\Style\Bullet
+     * @return \foTYPE\PhpPresentation\Style\Bullet
      */
     public function getBulletStyle()
     {
@@ -139,9 +139,9 @@ class Paragraph implements ComparableInterface
     /**
      * Set bullet style
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Bullet $style
+     * @param  \foTYPE\PhpPresentation\Style\Bullet $style
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setBulletStyle(Bullet $style = null)
     {
@@ -154,7 +154,7 @@ class Paragraph implements ComparableInterface
      * Create text (can not be formatted !)
      *
      * @param  string $pText Text
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElement
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElement
      * @throws \Exception
      */
     public function createText($pText = '')
@@ -168,9 +168,9 @@ class Paragraph implements ComparableInterface
     /**
      * Add text
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface $pText Rich text element
+     * @param  \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface $pText Rich text element
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function addText(TextElementInterface $pText = null)
     {
@@ -182,7 +182,7 @@ class Paragraph implements ComparableInterface
     /**
      * Create break
      *
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\BreakElement
+     * @return \foTYPE\PhpPresentation\Shape\RichText\BreakElement
      * @throws \Exception
      */
     public function createBreak()
@@ -197,7 +197,7 @@ class Paragraph implements ComparableInterface
      * Create text run (can be formatted)
      *
      * @param  string $pText Text
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Run
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Run
      * @throws \Exception
      */
     public function createTextRun($pText = '')
@@ -229,7 +229,7 @@ class Paragraph implements ComparableInterface
         // Return value
         $returnValue = '';
 
-        // Loop trough all \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+        // Loop trough all \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
         foreach ($this->richTextElements as $text) {
             if ($text instanceof TextElementInterface) {
                 $returnValue .= $text->getText();
@@ -243,7 +243,7 @@ class Paragraph implements ComparableInterface
     /**
      * Get Rich Text elements
      *
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface[]
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface[]
      */
     public function getRichTextElements()
     {
@@ -253,14 +253,14 @@ class Paragraph implements ComparableInterface
     /**
      * Set Rich Text elements
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface[] $pElements Array of elements
+     * @param  \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface[] $pElements Array of elements
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setRichTextElements($pElements = null)
     {
         if (!is_array($pElements)) {
-            throw new \Exception("Invalid \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface[] array passed.");
+            throw new \Exception("Invalid \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface[] array passed.");
         }
         $this->richTextElements = $pElements;
         return $this;

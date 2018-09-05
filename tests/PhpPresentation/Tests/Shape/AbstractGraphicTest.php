@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\AbstractGraphic;
+use foTYPE\PhpPresentation\Shape\AbstractGraphic;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Table element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\AbstractGraphic
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\AbstractGraphic
  */
 class AbstractGraphicTest extends TestCase
 {

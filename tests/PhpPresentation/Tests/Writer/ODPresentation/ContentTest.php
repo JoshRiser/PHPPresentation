@@ -1,26 +1,26 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Tests\Writer\ODPresentation;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\Text;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Media;
-use PhpOffice\PhpPresentation\Shape\RichText\Run;
-use PhpOffice\PhpPresentation\Slide\Transition;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Shape\RichText\Run;
+use foTYPE\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 use PhpOffice\Common\Drawing;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\ODPresentation\Manifest
+ * Test class for foTYPE\PhpPresentation\Writer\ODPresentation\Manifest
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\ODPresentation\Manifest
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\ODPresentation\Manifest
  */
 class ContentTest extends PhpPresentationTestCase
 {
@@ -590,7 +590,7 @@ class ContentTest extends PhpPresentationTestCase
 
         $this->assertZipXmlAttributeContains('content.xml', $element, 'presentation:transition-speed', 'slow');
 
-        $rcTransition = new \ReflectionClass('PhpOffice\PhpPresentation\Slide\Transition');
+        $rcTransition = new \ReflectionClass('foTYPE\PhpPresentation\Slide\Transition');
         $arrayConstants = $rcTransition->getConstants();
         foreach ($arrayConstants as $key => $value) {
             if (strpos($key, 'TRANSITION_') !== 0) {

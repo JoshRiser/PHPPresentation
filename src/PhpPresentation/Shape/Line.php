@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Border;
 
 /**
  * Line shape
@@ -27,7 +27,7 @@ use PhpOffice\PhpPresentation\Style\Border;
 class Line extends AbstractShape implements ComparableInterface
 {
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Line instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Line instance
      *
      * @param int $fromX
      * @param int $fromY

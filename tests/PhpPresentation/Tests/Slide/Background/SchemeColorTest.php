@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Slide\Background;
+namespace foTYPE\PhpPresentation\Tests\Slide\Background;
 
-use PhpOffice\PhpPresentation\Slide\Background\SchemeColor;
-use PhpOffice\PhpPresentation\Style\SchemeColor as StyleSchemeColor;
+use foTYPE\PhpPresentation\Slide\Background\SchemeColor;
+use foTYPE\PhpPresentation\Style\SchemeColor as StyleSchemeColor;
 use PHPUnit\Framework\TestCase;
 
 class SchemeColorTest extends TestCase

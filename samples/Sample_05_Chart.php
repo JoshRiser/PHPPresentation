@@ -2,20 +2,20 @@
 
 include_once 'Sample_Header.php';
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Area;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Area;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Scatter;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
 
 function fnSlide_Area(PhpPresentation $objPHPPresentation) {
     global $oFill;
@@ -399,7 +399,7 @@ function fnSlide_Doughnut(PhpPresentation $objPHPPresentation)
 
     // Create a doughnut chart (that should be inserted in a shape)
     echo date('H:i:s') . ' Create a non-3D Doughnut chart (that should be inserted in a chart shape)' . EOL;
-    $doughnutChart = new \PhpOffice\PhpPresentation\Shape\Chart\Type\Doughnut();
+    $doughnutChart = new \foTYPE\PhpPresentation\Shape\Chart\Type\Doughnut();
     $doughnutChart->setHoleSize(43);
     $series = new Series('Downloads', $seriesData);
     $series->getDataPointFill(0)->setFillType(Fill::FILL_SOLID)->setStartColor(new Color('FF7CB5EC'));
@@ -436,7 +436,7 @@ function fnSlide_Doughnut(PhpPresentation $objPHPPresentation)
     $shape->getPlotArea()->setType($doughnutChart);
     $shape->getLegend()->getBorder()->setLineStyle(Border::LINE_SINGLE);
     $shape->getLegend()->getFont()->setItalic(true);
-    $shape->getLegend()->setPosition(\PhpOffice\PhpPresentation\Shape\Chart\Legend::POSITION_LEFT);
+    $shape->getLegend()->setPosition(\foTYPE\PhpPresentation\Shape\Chart\Legend::POSITION_LEFT);
 }
 
 function fnSlide_Pie3D(PhpPresentation $objPHPPresentation) {
@@ -554,7 +554,7 @@ function fnSlide_Scatter(PhpPresentation $objPHPPresentation) {
     $lineChart = new Scatter();
     $series = new Series('Downloads', $seriesData);
     $series->setShowSeriesName(true);
-    $series->getMarker()->setSymbol(\PhpOffice\PhpPresentation\Shape\Chart\Marker::SYMBOL_DASH);
+    $series->getMarker()->setSymbol(\foTYPE\PhpPresentation\Shape\Chart\Marker::SYMBOL_DASH);
     $series->getMarker()->setSize(10);
     $lineChart->addSeries($series);
     

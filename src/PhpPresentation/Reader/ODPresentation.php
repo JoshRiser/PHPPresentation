@@ -15,22 +15,22 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Reader;
+namespace foTYPE\PhpPresentation\Reader;
 
 use ZipArchive;
 use PhpOffice\Common\XMLReader;
 use PhpOffice\Common\Drawing as CommonDrawing;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Drawing\Gd;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Font;
-use PhpOffice\PhpPresentation\Style\Shadow;
-use PhpOffice\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Drawing\Gd;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
+use foTYPE\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Style\Alignment;
 
 /**
  * Serialized format reader
@@ -61,7 +61,7 @@ class ODPresentation implements ReaderInterface
     protected $oXMLReader;
 
     /**
-     * Can the current \PhpOffice\PhpPresentation\Reader\ReaderInterface read the file?
+     * Can the current \foTYPE\PhpPresentation\Reader\ReaderInterface read the file?
      *
      * @param  string $pFilename
      * @throws \Exception
@@ -102,14 +102,14 @@ class ODPresentation implements ReaderInterface
      * Loads PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      * @throws \Exception
      */
     public function load($pFilename)
     {
         // Unserialize... First make sure the file supports it!
         if (!$this->fileSupportsUnserializePhpPresentation($pFilename)) {
-            throw new \Exception("Invalid file format for PhpOffice\PhpPresentation\Reader\ODPresentation: " . $pFilename . ".");
+            throw new \Exception("Invalid file format for foTYPE\PhpPresentation\Reader\ODPresentation: " . $pFilename . ".");
         }
 
         return $this->loadFile($pFilename);
@@ -119,7 +119,7 @@ class ODPresentation implements ReaderInterface
      * Load PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      */
     protected function loadFile($pFilename)
     {
@@ -204,7 +204,7 @@ class ODPresentation implements ReaderInterface
         if ($nodeDrawingPageProps instanceof \DOMElement) {
             // Read Background Color
             if ($nodeDrawingPageProps->hasAttribute('draw:fill-color') && $nodeDrawingPageProps->getAttribute('draw:fill') == 'solid') {
-                $oBackground = new \PhpOffice\PhpPresentation\Slide\Background\Color();
+                $oBackground = new \foTYPE\PhpPresentation\Slide\Background\Color();
                 $oColor = new Color();
                 $oColor->setRGB(substr($nodeDrawingPageProps->getAttribute('draw:fill-color'), -6));
                 $oBackground->setColor($oColor);

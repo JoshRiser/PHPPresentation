@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
- * \PhpOffice\PhpPresentation\DocumentProperties
+ * \foTYPE\PhpPresentation\DocumentProperties
  */
 class DocumentProperties
 {
@@ -93,7 +93,7 @@ class DocumentProperties
     private $company;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\DocumentProperties
+     * Create a new \foTYPE\PhpPresentation\DocumentProperties
      */
     public function __construct()
     {
@@ -124,7 +124,7 @@ class DocumentProperties
      * Set Creator
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setCreator($pValue = '')
     {
@@ -147,7 +147,7 @@ class DocumentProperties
      * Set Last Modified By
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setLastModifiedBy($pValue = '')
     {
@@ -170,7 +170,7 @@ class DocumentProperties
      * Set Created
      *
      * @param int $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setCreated($pValue = null)
     {
@@ -196,7 +196,7 @@ class DocumentProperties
      * Set Modified
      *
      * @param  int                         $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setModified($pValue = null)
     {
@@ -222,7 +222,7 @@ class DocumentProperties
      * Set Title
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setTitle($pValue = '')
     {
@@ -245,7 +245,7 @@ class DocumentProperties
      * Set Description
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setDescription($pValue = '')
     {
@@ -268,7 +268,7 @@ class DocumentProperties
      * Set Subject
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setSubject($pValue = '')
     {
@@ -291,7 +291,7 @@ class DocumentProperties
      * Set Keywords
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setKeywords($pValue = '')
     {
@@ -314,7 +314,7 @@ class DocumentProperties
      * Set Category
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setCategory($pValue = '')
     {
@@ -337,7 +337,7 @@ class DocumentProperties
      * Set Company
      *
      * @param  string                           $pValue
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function setCompany($pValue = '')
     {

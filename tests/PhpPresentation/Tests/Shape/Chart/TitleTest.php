@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Title;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Shape\Chart\Title;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Title element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Title
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Title
  */
 class TitleTest extends TestCase
 {

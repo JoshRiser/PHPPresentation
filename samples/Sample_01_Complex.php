@@ -1,9 +1,9 @@
 <?php
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Color;
 
 include_once 'Sample_Header.php';
 

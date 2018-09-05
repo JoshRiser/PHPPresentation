@@ -15,18 +15,18 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Reader;
+namespace foTYPE\PhpPresentation\Tests\Reader;
 
-use PhpOffice\PhpPresentation\DocumentLayout;
-use PhpOffice\PhpPresentation\Reader\PowerPoint2007;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\Reader\PowerPoint2007;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PowerPoint2007 reader
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Reader\PowerPoint2007
+ * @coversDefaultClass foTYPE\PhpPresentation\Reader\PowerPoint2007
  */
 class PowerPoint2007Test extends TestCase
 {
@@ -59,7 +59,7 @@ class PowerPoint2007Test extends TestCase
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage Invalid file format for PhpOffice\PhpPresentation\Reader\PowerPoint2007:
+     * @expectedExceptionMessage Invalid file format for foTYPE\PhpPresentation\Reader\PowerPoint2007:
      */
     public function testLoadFileBadFormat()
     {

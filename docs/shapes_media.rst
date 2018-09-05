@@ -9,7 +9,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Media;
+    use foTYPE\PhpPresentation\Shape\Media;
 
     $oMedia = new Media();
     $oMedia->setPath('file.wmv');
@@ -22,7 +22,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Media;
+    use foTYPE\PhpPresentation\Shape\Media;
 
     $oMedia = new Media();
     $oMedia->setName('Name of the Media');

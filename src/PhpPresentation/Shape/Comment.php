@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Shape\Comment\Author;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Shape\Comment\Author;
 
 /**
  * Comment shape

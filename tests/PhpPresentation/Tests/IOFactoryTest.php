@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\IOFactory;
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\IOFactory;
+use foTYPE\PhpPresentation\PhpPresentation;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for IOFactory
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\IOFactory
+ * @coversDefaultClass foTYPE\PhpPresentation\IOFactory
  */
 class IOFactoryTest extends TestCase
 {
@@ -68,7 +68,7 @@ class IOFactoryTest extends TestCase
      * Test load class exception
      *
      * @expectedException \Exception
-     * @expectedExceptionMessage Could not automatically determine \PhpOffice\PhpPresentation\Reader\ReaderInterface for file.
+     * @expectedExceptionMessage Could not automatically determine \foTYPE\PhpPresentation\Reader\ReaderInterface for file.
      */
     public function testLoadException()
     {

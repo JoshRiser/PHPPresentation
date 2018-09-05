@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\Shape\RichText\Paragraph as RichTextParagraph;
+use foTYPE\PhpPresentation\Shape\RichText\Paragraph as RichTextParagraph;
 
 /**
  * Class TextStyle

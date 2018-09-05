@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Scatter;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Scatter element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Type\Scatter
  */
 class AbstractTest extends TestCase
 {

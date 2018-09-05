@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Shape\Chart\Type;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar
+ * \foTYPE\PhpPresentation\Shape\Chart\Type\Bar
  */
 class AbstractTypePie extends AbstractType
 {
@@ -42,7 +42,7 @@ class AbstractTypePie extends AbstractType
      * Set explosion
      *
      * @param integer $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractTypePie
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Type\AbstractTypePie
      */
     public function setExplosion($value = 0)
     {

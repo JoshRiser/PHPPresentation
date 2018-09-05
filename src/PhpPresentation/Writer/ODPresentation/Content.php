@@ -1,31 +1,31 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Writer\ODPresentation;
 
 use PhpOffice\Common\Adapter\Zip\ZipInterface;
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\Text;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Media;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Shape\Chart;
-use PhpOffice\PhpPresentation\Shape\Drawing as ShapeDrawing;
-use PhpOffice\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Line;
-use PhpOffice\PhpPresentation\Shape\RichText\BreakElement;
-use PhpOffice\PhpPresentation\Shape\RichText\Run;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\Table;
-use PhpOffice\PhpPresentation\Slide\Note;
-use PhpOffice\PhpPresentation\Slide\Transition;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Drawing as ShapeDrawing;
+use foTYPE\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Shape\RichText\BreakElement;
+use foTYPE\PhpPresentation\Shape\RichText\Run;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\Table;
+use foTYPE\PhpPresentation\Slide\Note;
+use foTYPE\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 class Content extends AbstractDecoratorWriter
 {
@@ -322,7 +322,7 @@ class Content extends AbstractDecoratorWriter
      * Write picture
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter
-     * @param \PhpOffice\PhpPresentation\Shape\Media $shape
+     * @param \foTYPE\PhpPresentation\Shape\Media $shape
      */
     public function writeShapeMedia(XMLWriter $objWriter, Media $shape)
     {
@@ -370,7 +370,7 @@ class Content extends AbstractDecoratorWriter
      * Write picture
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter
-     * @param \PhpOffice\PhpPresentation\Shape\AbstractDrawingAdapter $shape
+     * @param \foTYPE\PhpPresentation\Shape\AbstractDrawingAdapter $shape
      */
     public function writeShapeDrawing(XMLWriter $objWriter, ShapeDrawing\AbstractDrawingAdapter $shape)
     {
@@ -417,7 +417,7 @@ class Content extends AbstractDecoratorWriter
      * Write text
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter
-     * @param \PhpOffice\PhpPresentation\Shape\RichText $shape
+     * @param \foTYPE\PhpPresentation\Shape\RichText $shape
      */
     public function writeShapeTxt(XMLWriter $objWriter, RichText $shape)
     {
@@ -799,7 +799,7 @@ class Content extends AbstractDecoratorWriter
      * Write the default style information for a RichText shape
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter
-     * @param \PhpOffice\PhpPresentation\Shape\RichText $shape
+     * @param \foTYPE\PhpPresentation\Shape\RichText $shape
      */
     public function writeTxtStyle(XMLWriter $objWriter, RichText $shape)
     {
@@ -1076,7 +1076,7 @@ class Content extends AbstractDecoratorWriter
     /**
      * Write the slide note
      * @param XMLWriter $objWriter
-     * @param \PhpOffice\PhpPresentation\Slide\Note $note
+     * @param \foTYPE\PhpPresentation\Slide\Note $note
      */
     public function writeSlideNote(XMLWriter $objWriter, Note $note)
     {

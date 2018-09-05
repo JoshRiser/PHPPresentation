@@ -39,8 +39,8 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
-    use PhpOffice\PhpPresentation\Style\Bullet;
+    use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
+    use foTYPE\PhpPresentation\Style\Bullet;
 
     $oParagraph = new Paragraph();
     $oParagraph->getBulletStyle();
@@ -49,9 +49,9 @@ With the bullet style, you can define the char, the font, the color and the type
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
-    use PhpOffice\PhpPresentation\Style\Bullet;
-    use PhpOffice\PhpPresentation\Style\Color;
+    use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
+    use foTYPE\PhpPresentation\Style\Bullet;
+    use foTYPE\PhpPresentation\Style\Color;
 
     $oParagraph = new Paragraph();
     $oParagraph->getBulletStyle()->setBulletChar('-');
@@ -67,7 +67,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
+    use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
 
     $oParagraph = new Paragraph();
     $oParagraph->setLineSpacing(200);
@@ -82,7 +82,7 @@ Example:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\RichText\Run;
+    use foTYPE\PhpPresentation\Shape\RichText\Run;
 
     $oRun = new Run();
     $oRun->setLanguage('fr-FR');

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Shape\RichText;
 
 /**
  * Transition class

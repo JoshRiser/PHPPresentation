@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Shadow
+ * \foTYPE\PhpPresentation\Style\Shadow
  */
 class Shadow implements ComparableInterface
 {
@@ -76,7 +76,7 @@ class Shadow implements ComparableInterface
     /**
      * Color
      *
-     * @var \PhpOffice\PhpPresentation\Style\Color
+     * @var \foTYPE\PhpPresentation\Style\Color
      */
     private $color;
 
@@ -95,7 +95,7 @@ class Shadow implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Shadow
+     * Create a new \foTYPE\PhpPresentation\Style\Shadow
      */
     public function __construct()
     {
@@ -227,7 +227,7 @@ class Shadow implements ComparableInterface
     /**
      * Get Color
      *
-     * @return \PhpOffice\PhpPresentation\Style\Color
+     * @return \foTYPE\PhpPresentation\Style\Color
      */
     public function getColor()
     {
@@ -237,7 +237,7 @@ class Shadow implements ComparableInterface
     /**
      * Set Color
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Color  $pValue
+     * @param  \foTYPE\PhpPresentation\Style\Color  $pValue
      * @throws \Exception
      * @return self
      */

@@ -4,24 +4,24 @@ namespace PhpPresentation\Tests\Writer\PowerPoint2007;
 
 use \Exception;
 use PhpOffice\Common\Drawing;
-use PhpOffice\PhpPresentation\Shape\Chart\Axis;
-use PhpOffice\PhpPresentation\Shape\Chart\Gridlines;
-use PhpOffice\PhpPresentation\Shape\Chart\Marker;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractType;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Area;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Doughnut;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Font;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Outline;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Shape\Chart\Axis;
+use foTYPE\PhpPresentation\Shape\Chart\Gridlines;
+use foTYPE\PhpPresentation\Shape\Chart\Marker;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\AbstractType;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Area;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Doughnut;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Scatter;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Outline;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
 
 class PptChartsTest extends PhpPresentationTestCase
 {
@@ -48,7 +48,7 @@ class PptChartsTest extends PhpPresentationTestCase
         $oShape = $oSlide->createChartShape();
         $oShape->setResizeProportional(false)->setHeight(550)->setWidth(700)->setOffsetX(120)->setOffsetY(80);
         /** @var AbstractType $stub */
-        $stub = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractType');
+        $stub = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Shape\Chart\Type\AbstractType');
         $oShape->getPlotArea()->setType($stub);
 
         $this->writePresentationFile($this->oPresentation, 'PowerPoint2007');
@@ -67,7 +67,7 @@ class PptChartsTest extends PhpPresentationTestCase
         $this->assertTrue($oShape->getTitle()->isVisible());
 
         // Set Visible : TRUE
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(true));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(true));
         $this->assertTrue($oShape->getTitle()->isVisible());
         $this->assertZipXmlElementExists('ppt/charts/' . $oShape->getIndexedFilename(), $element);
         $this->assertZipXmlAttributeEquals('ppt/charts/' . $oShape->getIndexedFilename(), $element, 'val', '0');
@@ -83,7 +83,7 @@ class PptChartsTest extends PhpPresentationTestCase
         $oShape->getPlotArea()->setType($oLine);
 
         // Set Visible : FALSE
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(false));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(false));
         $this->assertFalse($oShape->getTitle()->isVisible());
         $this->assertZipXmlElementExists('ppt/charts/' . $oShape->getIndexedFilename(), $element);
         $this->assertZipXmlAttributeEquals('ppt/charts/' . $oShape->getIndexedFilename(), $element, 'val', '1');
@@ -177,7 +177,7 @@ class PptChartsTest extends PhpPresentationTestCase
         $oShape->getPlotArea()->setType($oLine);
 
         // Set Visible : FALSE
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Axis', $oShape->getPlotArea()->getAxisX()->setIsVisible(false));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Axis', $oShape->getPlotArea()->getAxisX()->setIsVisible(false));
         $this->assertFalse($oShape->getPlotArea()->getAxisX()->isVisible());
         $this->assertZipXmlElementExists('ppt/charts/' . $oShape->getIndexedFilename(), $element);
         $this->assertZipXmlAttributeEquals('ppt/charts/' . $oShape->getIndexedFilename(), $element, 'val', '1');
@@ -193,7 +193,7 @@ class PptChartsTest extends PhpPresentationTestCase
         $oShape->getPlotArea()->setType($oLine);
 
         // Set Visible : TRUE
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Axis', $oShape->getPlotArea()->getAxisX()->setIsVisible(true));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Axis', $oShape->getPlotArea()->getAxisX()->setIsVisible(true));
         $this->assertTrue($oShape->getPlotArea()->getAxisX()->isVisible());
         $this->assertZipXmlElementExists('ppt/charts/' . $oShape->getIndexedFilename(), $element);
         $this->assertZipXmlAttributeEquals('ppt/charts/' . $oShape->getIndexedFilename(), $element, 'val', '0');

@@ -1,25 +1,25 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Chart;
-use PhpOffice\PhpPresentation\Shape\Chart\Gridlines;
-use PhpOffice\PhpPresentation\Shape\Chart\Legend;
-use PhpOffice\PhpPresentation\Shape\Chart\PlotArea;
-use PhpOffice\PhpPresentation\Shape\Chart\Title;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Area;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Doughnut;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Chart\Gridlines;
+use foTYPE\PhpPresentation\Shape\Chart\Legend;
+use foTYPE\PhpPresentation\Shape\Chart\PlotArea;
+use foTYPE\PhpPresentation\Shape\Chart\Title;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Area;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Doughnut;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Scatter;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Fill;
 
 class PptCharts extends AbstractDecoratorWriter
 {
@@ -53,7 +53,7 @@ class PptCharts extends AbstractDecoratorWriter
     /**
      * Write chart to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart $chart
+     * @param  \foTYPE\PhpPresentation\Shape\Chart $chart
      * @return string                    XML Output
      * @throws \Exception
      */
@@ -202,7 +202,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write chart to XML format
      *
      * @param  PhpPresentation $presentation
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart $chart
+     * @param  \foTYPE\PhpPresentation\Shape\Chart $chart
      * @param  string $tempName
      * @return string                    String output
      * @throws \Exception
@@ -380,7 +380,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Title
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Title $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Title $subject
      * @throws \Exception
      */
     protected function writeTitle(XMLWriter $objWriter, Title $subject)
@@ -479,8 +479,8 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Plot Area
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\PlotArea $subject
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart $chart
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\PlotArea $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart $chart
      * @throws \Exception
      */
     protected function writePlotArea(XMLWriter $objWriter, PlotArea $subject, Chart $chart)
@@ -530,7 +530,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Legend
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Legend $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Legend $subject
      * @throws \Exception
      */
     protected function writeLegend(XMLWriter $objWriter, Legend $subject)
@@ -685,7 +685,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Area
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Area $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Area $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -788,7 +788,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Bar
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Bar $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1010,7 +1010,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Bar3D
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1212,7 +1212,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Pie
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Doughnut $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Doughnut $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1370,7 +1370,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Pie
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Pie $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Pie $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1539,7 +1539,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Pie3D
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1702,7 +1702,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Line
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Line $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Line $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -1875,7 +1875,7 @@ class PptCharts extends AbstractDecoratorWriter
      * Write Type Scatter
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter $subject
+     * @param  \foTYPE\PhpPresentation\Shape\Chart\Type\Scatter $subject
      * @param  boolean $includeSheet
      * @throws \Exception
      */
@@ -2049,7 +2049,7 @@ class PptCharts extends AbstractDecoratorWriter
     /**
      * Write chart relationships to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\Chart $pChart
+     * @param  \foTYPE\PhpPresentation\Shape\Chart $pChart
      * @return string                    XML Output
      * @throws \Exception
      */

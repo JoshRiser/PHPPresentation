@@ -45,6 +45,6 @@ A shape defined in each level will have an override for its formatting in each l
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Placeholder;
+    use foTYPE\PhpPresentation\Shape\Placeholder;
     $oShape->setPlaceHolder(new Placeholder(Placeholder::PH_TYPE_TITLE));
 

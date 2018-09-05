@@ -3,19 +3,19 @@
 namespace PhpPresentation\Tests\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Media;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Slide\Animation;
-use PhpOffice\PhpPresentation\Slide\Transition;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Slide\Animation;
+use foTYPE\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 /**
  * Test class for PowerPoint2007
@@ -831,7 +831,7 @@ class PptSlideTest extends PhpPresentationTestCase
         $this->resetPresentationFile();
         $this->assertZipXmlAttributeEquals('ppt/slides/slide1.xml', $element, 'spd', 'slow');
 
-        $rcTransition = new \ReflectionClass('PhpOffice\PhpPresentation\Slide\Transition');
+        $rcTransition = new \ReflectionClass('foTYPE\PhpPresentation\Slide\Transition');
         $arrayConstants = $rcTransition->getConstants();
         foreach ($arrayConstants as $key => $value) {
             if (strpos($key, 'TRANSITION_') !== 0) {

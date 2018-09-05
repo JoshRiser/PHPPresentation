@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Slide;
+namespace foTYPE\PhpPresentation\Tests\Slide;
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Iterator;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Iterator;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for IOFactory
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\IOFactory
+ * @coversDefaultClass foTYPE\PhpPresentation\IOFactory
  */
 class IteratorTest extends TestCase
 {

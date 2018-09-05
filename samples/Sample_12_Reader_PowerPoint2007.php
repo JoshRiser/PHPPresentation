@@ -4,9 +4,9 @@ set_time_limit(10);
 
 include_once 'Sample_Header.php';
 
-use PhpOffice\PhpPresentation\IOFactory;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\IOFactory;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Shape\RichText;
 
 $pptReader = IOFactory::createReader('PowerPoint2007');
 $oPHPPresentation = $pptReader->load('resources/Sample_12.pptx');

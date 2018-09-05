@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Writer\ODPresentation;
 
 use PhpOffice\Common\Adapter\Zip\ZipInterface;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Shape\Drawing as ShapeDrawing;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Drawing as ShapeDrawing;
+use foTYPE\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 class MetaInfManifest extends AbstractDecoratorWriter
 {

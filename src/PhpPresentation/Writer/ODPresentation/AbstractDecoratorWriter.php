@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Writer\ODPresentation;
 
-use PhpOffice\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Chart;
 
-abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer\AbstractDecoratorWriter
+abstract class AbstractDecoratorWriter extends \foTYPE\PhpPresentation\Writer\AbstractDecoratorWriter
 {
     /**
      * @var Chart[]
@@ -12,7 +12,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
     protected $arrayChart;
 
     /**
-     * @return \PhpOffice\PhpPresentation\Shape\Chart[]
+     * @return \foTYPE\PhpPresentation\Shape\Chart[]
      */
     public function getArrayChart()
     {
@@ -20,7 +20,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
     }
 
     /**
-     * @param \PhpOffice\PhpPresentation\Shape\Chart[] $arrayChart
+     * @param \foTYPE\PhpPresentation\Shape\Chart[] $arrayChart
      * @return AbstractDecoratorWriter
      */
     public function setArrayChart($arrayChart)

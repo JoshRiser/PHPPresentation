@@ -15,9 +15,9 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Autoloader;
+use foTYPE\PhpPresentation\Autoloader;
 use PHPUnit\Framework\TestCase;
 
 /**

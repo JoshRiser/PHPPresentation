@@ -14,16 +14,16 @@
  * @copyright   2009-2015 PHPPresentation contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\ShapeContainerInterface;
-use PhpOffice\PhpPresentation\Slide\Background\Color as BackgroundColor;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\ColorMap;
-use PhpOffice\PhpPresentation\Style\SchemeColor;
-use PhpOffice\PhpPresentation\Style\TextStyle;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\ShapeContainerInterface;
+use foTYPE\PhpPresentation\Slide\Background\Color as BackgroundColor;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\ColorMap;
+use foTYPE\PhpPresentation\Style\SchemeColor;
+use foTYPE\PhpPresentation\Style\TextStyle;
 
 /**
  * Class SlideMaster
@@ -33,21 +33,21 @@ class SlideMaster extends AbstractSlide implements ComparableInterface, ShapeCon
     /**
      * Collection of Slide objects
      *
-     * @var \PhpOffice\PhpPresentation\Slide\SlideLayout[]
+     * @var \foTYPE\PhpPresentation\Slide\SlideLayout[]
      */
     protected $slideLayouts = array();
     /**
      * Mapping of colors to the theme
      *
-     * @var \PhpOffice\PhpPresentation\Style\ColorMap
+     * @var \foTYPE\PhpPresentation\Style\ColorMap
      */
     public $colorMap;
     /**
-     * @var \PhpOffice\PhpPresentation\Style\TextStyle
+     * @var \foTYPE\PhpPresentation\Style\TextStyle
      */
     protected $textStyles;
     /**
-     * @var \PhpOffice\PhpPresentation\Style\SchemeColor[]
+     * @var \foTYPE\PhpPresentation\Style\SchemeColor[]
      */
     protected $arraySchemeColor = array();
     /**
@@ -100,7 +100,7 @@ class SlideMaster extends AbstractSlide implements ComparableInterface, ShapeCon
     /**
      * Create a slideLayout and add it to this presentation
      *
-     * @return \PhpOffice\PhpPresentation\Slide\SlideLayout
+     * @return \foTYPE\PhpPresentation\Slide\SlideLayout
      */
     public function createSlideLayout()
     {
@@ -112,9 +112,9 @@ class SlideMaster extends AbstractSlide implements ComparableInterface, ShapeCon
     /**
      * Add slideLayout
      *
-     * @param  \PhpOffice\PhpPresentation\Slide\SlideLayout $slideLayout
+     * @param  \foTYPE\PhpPresentation\Slide\SlideLayout $slideLayout
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Slide\SlideLayout
+     * @return \foTYPE\PhpPresentation\Slide\SlideLayout
      */
     public function addSlideLayout(SlideLayout $slideLayout = null)
     {
@@ -159,7 +159,7 @@ class SlideMaster extends AbstractSlide implements ComparableInterface, ShapeCon
     }
 
     /**
-     * @return \PhpOffice\PhpPresentation\Style\SchemeColor[]
+     * @return \foTYPE\PhpPresentation\Style\SchemeColor[]
      */
     public function getAllSchemeColors()
     {

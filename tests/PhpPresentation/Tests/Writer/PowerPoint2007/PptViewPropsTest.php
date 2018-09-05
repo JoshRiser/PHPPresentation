@@ -2,8 +2,8 @@
 
 namespace PhpPresentation\Tests\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\PresentationProperties;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\PresentationProperties;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
 
 class PptViewPropsTest extends PhpPresentationTestCase
 {

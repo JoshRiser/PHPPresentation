@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\IOFactory;
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\IOFactory;
+use foTYPE\PhpPresentation\PhpPresentation;
 use PHPUnit\Framework\TestCase;
 
 class PhpPresentationTestCase extends TestCase

@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Comment;
+namespace foTYPE\PhpPresentation\Tests\Shape\Comment;
 
-use PhpOffice\PhpPresentation\Shape\Comment\Author;
+use foTYPE\PhpPresentation\Shape\Comment\Author;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Author element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Comment\Author
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Comment\Author
  */
 class AuthorTest extends TestCase
 {

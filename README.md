@@ -72,7 +72,7 @@ In this case, you will have to register the autoloader.
 
 ```php
 require_once 'path/to/PhpPresentation/src/PhpPresentation/Autoloader.php';
-\PhpOffice\PhpPresentation\Autoloader::register();
+\foTYPE\PhpPresentation\Autoloader::register();
 ```
 
 You will also need to download the latest PHPOffice/Common release from its [releases page](https://github.com/PHPOffice/Common/releases).
@@ -90,17 +90,17 @@ The following is a basic usage example of the PHPPresentation library.
 ```php
 // with your own install
 require_once 'src/PhpPresentation/Autoloader.php';
-\PhpOffice\PhpPresentation\Autoloader::register();
+\foTYPE\PhpPresentation\Autoloader::register();
 require_once 'src/Common/Autoloader.php';
 \PhpOffice\Common\Autoloader::register();
 
 // with Composer
 require_once 'vendor/autoload.php';
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\IOFactory;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\IOFactory;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Alignment;
 
 $objPHPPowerPoint = new PhpPresentation();
 

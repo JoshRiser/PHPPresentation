@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Tests\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
 
 class RelationshipsTest extends PhpPresentationTestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\SlideLayout;
-use PhpOffice\PhpPresentation\Style\ColorMap;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\SlideLayout;
+use foTYPE\PhpPresentation\Style\ColorMap;
 
 class PptSlideLayouts extends AbstractSlide
 {
@@ -57,7 +57,7 @@ class PptSlideLayouts extends AbstractSlide
     /**
      * Write slide to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Slide\SlideLayout $pSlideLayout
+     * @param  \foTYPE\PhpPresentation\Slide\SlideLayout $pSlideLayout
      * @return string XML Output
      * @throws \Exception
      */

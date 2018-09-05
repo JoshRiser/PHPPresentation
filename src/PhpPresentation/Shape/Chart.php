@@ -15,13 +15,13 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Shape\Chart\Legend;
-use PhpOffice\PhpPresentation\Shape\Chart\PlotArea;
-use PhpOffice\PhpPresentation\Shape\Chart\Title;
-use PhpOffice\PhpPresentation\Shape\Chart\View3D;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Shape\Chart\Legend;
+use foTYPE\PhpPresentation\Shape\Chart\PlotArea;
+use foTYPE\PhpPresentation\Shape\Chart\Title;
+use foTYPE\PhpPresentation\Shape\Chart\View3D;
 
 /**
  * Chart element
@@ -31,28 +31,28 @@ class Chart extends AbstractGraphic implements ComparableInterface
     /**
      * Title
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @var \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     private $title;
 
     /**
      * Legend
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @var \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     private $legend;
 
     /**
      * Plot area
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\PlotArea
+     * @var \foTYPE\PhpPresentation\Shape\Chart\PlotArea
      */
     private $plotArea;
 
     /**
      * View 3D
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\View3D
+     * @var \foTYPE\PhpPresentation\Shape\Chart\View3D
      */
     private $view3D;
 
@@ -91,7 +91,7 @@ class Chart extends AbstractGraphic implements ComparableInterface
     /**
      * Get Title
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function getTitle()
     {
@@ -101,7 +101,7 @@ class Chart extends AbstractGraphic implements ComparableInterface
     /**
      * Get Legend
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function getLegend()
     {
@@ -111,7 +111,7 @@ class Chart extends AbstractGraphic implements ComparableInterface
     /**
      * Get PlotArea
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\PlotArea
+     * @return \foTYPE\PhpPresentation\Shape\Chart\PlotArea
      */
     public function getPlotArea()
     {
@@ -121,7 +121,7 @@ class Chart extends AbstractGraphic implements ComparableInterface
     /**
      * Get View3D
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\View3D
+     * @return \foTYPE\PhpPresentation\Shape\Chart\View3D
      */
     public function getView3D()
     {
@@ -142,7 +142,7 @@ class Chart extends AbstractGraphic implements ComparableInterface
      * Include spreadsheet for editing data? Requires PHPExcel in the same folder as PhpPresentation
      *
      * @param  boolean                   $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart
+     * @return \foTYPE\PhpPresentation\Shape\Chart
      */
     public function setIncludeSpreadsheet($value = false)
     {

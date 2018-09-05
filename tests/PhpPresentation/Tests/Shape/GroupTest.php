@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Line;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Group element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Group
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Group
  */
 class GroupTest extends TestCase
 {
@@ -98,7 +98,7 @@ class GroupTest extends TestCase
     public function testExtentsAndOffsetsForOneShape()
     {
         // We record initial values here because
-        // PhpOffice\PhpPresentation\Shape\Line subtracts the offsets
+        // foTYPE\PhpPresentation\Shape\Line subtracts the offsets
         // from the extents to produce a raw width and height.
         $offsetX = 100;
         $offsetY = 100;

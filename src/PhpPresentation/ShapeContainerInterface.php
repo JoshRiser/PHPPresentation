@@ -15,25 +15,25 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
- * PhpOffice\PhpPresentation\ShapeContainerInterface
+ * foTYPE\PhpPresentation\ShapeContainerInterface
  */
 interface ShapeContainerInterface
 {
     /**
     * Get collection of shapes
     *
-    * @return \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+    * @return \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
     */
     public function getShapeCollection();
 
     /**
     * Add shape to slide
     *
-    * @param  \PhpOffice\PhpPresentation\AbstractShape $shape
-    * @return \PhpOffice\PhpPresentation\AbstractShape
+    * @param  \foTYPE\PhpPresentation\AbstractShape $shape
+    * @return \foTYPE\PhpPresentation\AbstractShape
     */
     public function addShape(AbstractShape $shape);
 

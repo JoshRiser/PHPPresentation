@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\DocumentProperties;
+use foTYPE\PhpPresentation\DocumentProperties;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for DocumentProperties
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\DocumentProperties
+ * @coversDefaultClass foTYPE\PhpPresentation\DocumentProperties
  */
 class DocumentPropertiesTest extends TestCase
 {

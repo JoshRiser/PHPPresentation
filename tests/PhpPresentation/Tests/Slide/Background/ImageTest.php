@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Slide\Background;
+namespace foTYPE\PhpPresentation\Tests\Slide\Background;
 
-use PhpOffice\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Slide\Background\Image;
 use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase

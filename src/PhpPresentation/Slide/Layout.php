@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
 /**
- * \PhpOffice\PhpPresentation\Slide\Layout
+ * \foTYPE\PhpPresentation\Slide\Layout
  */
 class Layout
 {

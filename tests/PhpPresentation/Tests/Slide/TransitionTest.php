@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\Slide\Transition;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Slide\Transition
+ * @coversDefaultClass foTYPE\PhpPresentation\Slide\Transition
  */
 class TransitionTest extends TestCase
 {

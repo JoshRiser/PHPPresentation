@@ -15,14 +15,14 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Font;
-use PhpOffice\PhpPresentation\Style\Outline;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Style\Outline;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Axis
+ * \foTYPE\PhpPresentation\Shape\Chart\Axis
  */
 class Axis implements ComparableInterface
 {
@@ -51,7 +51,7 @@ class Axis implements ComparableInterface
     /**
      * Font
      *
-     * @var \PhpOffice\PhpPresentation\Style\Font
+     * @var \foTYPE\PhpPresentation\Style\Font
      */
     private $font;
 
@@ -106,7 +106,7 @@ class Axis implements ComparableInterface
     protected $isVisible = true;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Chart\Axis instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Chart\Axis instance
      *
      * @param string $title Title
      */
@@ -131,7 +131,7 @@ class Axis implements ComparableInterface
      * Set Title
      *
      * @param  string                         $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     public function setTitle($value = 'Axis Title')
     {
@@ -143,7 +143,7 @@ class Axis implements ComparableInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -153,9 +153,9 @@ class Axis implements ComparableInterface
     /**
      * Set font
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Font               $pFont Font
+     * @param  \foTYPE\PhpPresentation\Style\Font               $pFont Font
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setFont(Font $pFont = null)
     {
@@ -177,7 +177,7 @@ class Axis implements ComparableInterface
      * Set Format Code
      *
      * @param  string                         $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     public function setFormatCode($value = '')
     {

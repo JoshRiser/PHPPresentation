@@ -2,9 +2,9 @@
 
 namespace PhpPresentation\Tests\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007\PptSlideMasters;
-use PhpOffice\PhpPresentation\Slide\SlideLayout;
-use PhpOffice\PhpPresentation\Shape\Drawing\File as ShapeDrawingFile;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007\PptSlideMasters;
+use foTYPE\PhpPresentation\Slide\SlideLayout;
+use foTYPE\PhpPresentation\Shape\Drawing\File as ShapeDrawingFile;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack
+ * \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack
  * @deprecated 0.7
  */
 abstract class AbstractLayoutPack

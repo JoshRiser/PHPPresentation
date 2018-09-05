@@ -15,17 +15,17 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer;
+namespace foTYPE\PhpPresentation\Writer;
 
 use DirectoryIterator;
 use PhpOffice\Common\Adapter\Zip\ZipArchiveAdapter;
-use PhpOffice\PhpPresentation\HashTable;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\PackDefault;
+use foTYPE\PhpPresentation\HashTable;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\PackDefault;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\PowerPoint2007
+ * \foTYPE\PhpPresentation\Writer\PowerPoint2007
  */
 class PowerPoint2007 extends AbstractWriter implements WriterInterface
 {
@@ -46,7 +46,7 @@ class PowerPoint2007 extends AbstractWriter implements WriterInterface
     /**
      * Layout pack to use
      * @deprecated 0.7
-     * @var \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack
+     * @var \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack
      */
     protected $layoutPack;
 
@@ -110,7 +110,7 @@ class PowerPoint2007 extends AbstractWriter implements WriterInterface
             $class = __NAMESPACE__ . '\\PowerPoint2007\\' . $oFile->getBasename('.php');
             $o = new \ReflectionClass($class);
 
-            if ($o->isAbstract() || !$o->isSubclassOf('PhpOffice\PhpPresentation\Writer\PowerPoint2007\AbstractDecoratorWriter')) {
+            if ($o->isAbstract() || !$o->isSubclassOf('foTYPE\PhpPresentation\Writer\PowerPoint2007\AbstractDecoratorWriter')) {
                 continue;
             }
             $arrayFiles[$oFile->getBasename('.php')] = $o;
@@ -157,7 +157,7 @@ class PowerPoint2007 extends AbstractWriter implements WriterInterface
      * @param  boolean $pValue
      * @param  string $pDirectory Disk caching directory
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Writer\PowerPoint2007
+     * @return \foTYPE\PhpPresentation\Writer\PowerPoint2007
      */
     public function setUseDiskCaching($pValue = false, $pDirectory = null)
     {
@@ -187,7 +187,7 @@ class PowerPoint2007 extends AbstractWriter implements WriterInterface
      * Get layout pack to use
      *
      * @deprecated 0.7
-     * @return \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack
+     * @return \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack
      */
     public function getLayoutPack()
     {
@@ -198,8 +198,8 @@ class PowerPoint2007 extends AbstractWriter implements WriterInterface
      * Set layout pack to use
      *
      * @deprecated 0.7
-     * @param \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack $pValue
-     * @return \PhpOffice\PhpPresentation\Writer\PowerPoint2007
+     * @param \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\AbstractLayoutPack $pValue
+     * @return \foTYPE\PhpPresentation\Writer\PowerPoint2007
      */
     public function setLayoutPack(AbstractLayoutPack $pValue = null)
     {

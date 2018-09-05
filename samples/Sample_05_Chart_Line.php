@@ -2,13 +2,13 @@
 
 include_once 'Sample_Header.php';
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
 
 // Create new PHPPresentation object
 echo date('H:i:s') . ' Create new PHPPresentation object' . EOL;
@@ -73,7 +73,7 @@ echo EOL . date('H:i:s') . ' Create templated slide' . EOL;
 $currentSlide = createTemplatedSlide($objPHPPresentation);
 
 // Create a line chart (that should be inserted in a shape)
-$oOutline = new \PhpOffice\PhpPresentation\Style\Outline();
+$oOutline = new \foTYPE\PhpPresentation\Style\Outline();
 $oOutline->getFill()->setFillType(Fill::FILL_SOLID);
 $oOutline->getFill()->setStartColor(new Color(Color::COLOR_YELLOW));
 $oOutline->setWidth(2);
@@ -82,7 +82,7 @@ echo date('H:i:s') . ' Create a line chart (that should be inserted in a chart s
 $lineChart1 = clone $lineChart;
 $series1 = $lineChart1->getSeries();
 $series1[0]->setOutline($oOutline);
-$series1[0]->getMarker()->setSymbol(\PhpOffice\PhpPresentation\Shape\Chart\Marker::SYMBOL_DIAMOND);
+$series1[0]->getMarker()->setSymbol(\foTYPE\PhpPresentation\Shape\Chart\Marker::SYMBOL_DIAMOND);
 $series1[0]->getMarker()->setSize(7);
 $lineChart1->setSeries($series1);
 
@@ -106,7 +106,7 @@ echo date('H:i:s') . ' Create a line chart (that should be inserted in a chart s
 $lineChart2 = clone $lineChart;
 $series2 = $lineChart2->getSeries();
 $series2[0]->getFont()->setSize(25);
-$series2[0]->getMarker()->setSymbol(\PhpOffice\PhpPresentation\Shape\Chart\Marker::SYMBOL_TRIANGLE);
+$series2[0]->getMarker()->setSymbol(\foTYPE\PhpPresentation\Shape\Chart\Marker::SYMBOL_TRIANGLE);
 $series2[0]->getMarker()->setSize(10);
 $lineChart2->setSeries($series2);
 
@@ -129,11 +129,11 @@ $currentSlide = createTemplatedSlide($objPHPPresentation);
 echo date('H:i:s') . ' Create a line chart (that should be inserted in a chart shape)' . EOL;
 $lineChart3 = clone $lineChart;
 
-$oGridLines1 = new \PhpOffice\PhpPresentation\Shape\Chart\Gridlines();
+$oGridLines1 = new \foTYPE\PhpPresentation\Shape\Chart\Gridlines();
 $oGridLines1->getOutline()->setWidth(10);
 $oGridLines1->getOutline()->getFill()->setFillType(Fill::FILL_SOLID)->setStartColor(new Color(Color::COLOR_BLUE));
 
-$oGridLines2 = new \PhpOffice\PhpPresentation\Shape\Chart\Gridlines();
+$oGridLines2 = new \foTYPE\PhpPresentation\Shape\Chart\Gridlines();
 $oGridLines2->getOutline()->setWidth(1);
 $oGridLines2->getOutline()->getFill()->setFillType(Fill::FILL_SOLID)->setStartColor(new Color(Color::COLOR_DARKGREEN));
 
@@ -156,12 +156,12 @@ $currentSlide = createTemplatedSlide($objPHPPresentation);
 echo date('H:i:s') . ' Create a line chart (that should be inserted in a chart shape)' . EOL;
 $lineChart4 = clone $lineChart;
 
-$oOutlineAxisX = new \PhpOffice\PhpPresentation\Style\Outline();
+$oOutlineAxisX = new \foTYPE\PhpPresentation\Style\Outline();
 $oOutlineAxisX->setWidth(2);
 $oOutlineAxisX->getFill()->setFillType(Fill::FILL_SOLID);
 $oOutlineAxisX->getFill()->getStartColor()->setRGB('012345');
 
-$oOutlineAxisY = new \PhpOffice\PhpPresentation\Style\Outline();
+$oOutlineAxisY = new \foTYPE\PhpPresentation\Style\Outline();
 $oOutlineAxisY->setWidth(5);
 $oOutlineAxisY->getFill()->setFillType(Fill::FILL_SOLID);
 $oOutlineAxisY->getFill()->getStartColor()->setRGB('ABCDEF');

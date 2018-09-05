@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart\View3D;
+use foTYPE\PhpPresentation\Shape\Chart\View3D;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for View3D element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\View3D
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\View3D
  */
 class View3DTest extends TestCase
 {

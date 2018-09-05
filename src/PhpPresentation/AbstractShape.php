@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
-use PhpOffice\PhpPresentation\Shape\Placeholder;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
 
 /**
  * Abstract shape
@@ -30,7 +30,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Container
      *
-     * @var \PhpOffice\PhpPresentation\ShapeContainerInterface
+     * @var \foTYPE\PhpPresentation\ShapeContainerInterface
      */
     protected $container;
 
@@ -65,14 +65,14 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Fill
      *
-     * @var \PhpOffice\PhpPresentation\Style\Fill
+     * @var \foTYPE\PhpPresentation\Style\Fill
      */
     private $fill;
 
     /**
      * Border
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $border;
 
@@ -86,20 +86,20 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Shadow
      *
-     * @var \PhpOffice\PhpPresentation\Style\Shadow
+     * @var \foTYPE\PhpPresentation\Style\Shadow
      */
     protected $shadow;
 
     /**
      * Hyperlink
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Hyperlink
+     * @var \foTYPE\PhpPresentation\Shape\Hyperlink
      */
     protected $hyperlink;
 
     /**
      * PlaceHolder
-     * @var \PhpOffice\PhpPresentation\Shape\Placeholder
+     * @var \foTYPE\PhpPresentation\Shape\Placeholder
      */
     protected $placeholder;
 
@@ -143,7 +143,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Get Container, Slide or Group
      *
-     * @return \PhpOffice\PhpPresentation\Container
+     * @return \foTYPE\PhpPresentation\Container
      */
     public function getContainer()
     {
@@ -153,7 +153,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Set Container, Slide or Group
      *
-     * @param  \PhpOffice\PhpPresentation\ShapeContainerInterface $pValue
+     * @param  \foTYPE\PhpPresentation\ShapeContainerInterface $pValue
      * @param  bool $pOverrideOld If a Slide has already been assigned, overwrite it and remove image from old Slide?
      * @throws \Exception
      * @return self
@@ -161,14 +161,14 @@ abstract class AbstractShape implements ComparableInterface
     public function setContainer(ShapeContainerInterface $pValue = null, $pOverrideOld = false)
     {
         if (is_null($this->container)) {
-            // Add drawing to \PhpOffice\PhpPresentation\ShapeContainerInterface
+            // Add drawing to \foTYPE\PhpPresentation\ShapeContainerInterface
             $this->container = $pValue;
             if (!is_null($this->container)) {
                 $this->container->getShapeCollection()->append($this);
             }
         } else {
             if ($pOverrideOld) {
-                // Remove drawing from old \PhpOffice\PhpPresentation\ShapeContainerInterface
+                // Remove drawing from old \foTYPE\PhpPresentation\ShapeContainerInterface
                 $iterator = $this->container->getShapeCollection()->getIterator();
 
                 while ($iterator->valid()) {
@@ -180,10 +180,10 @@ abstract class AbstractShape implements ComparableInterface
                     $iterator->next();
                 }
 
-                // Set new \PhpOffice\PhpPresentation\Slide
+                // Set new \foTYPE\PhpPresentation\Slide
                 $this->setContainer($pValue);
             } else {
-                throw new \Exception("A \PhpOffice\PhpPresentation\ShapeContainerInterface has already been assigned. Shapes can only exist on one \PhpOffice\PhpPresentation\ShapeContainerInterface.");
+                throw new \Exception("A \foTYPE\PhpPresentation\ShapeContainerInterface has already been assigned. Shapes can only exist on one \foTYPE\PhpPresentation\ShapeContainerInterface.");
             }
         }
 
@@ -320,7 +320,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Get Fill
      *
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function getFill()
     {
@@ -329,8 +329,8 @@ abstract class AbstractShape implements ComparableInterface
 
     /**
      * Set Fill
-     * @param \PhpOffice\PhpPresentation\Style\Fill $pValue
-     * @return \PhpOffice\PhpPresentation\AbstractShape
+     * @param \foTYPE\PhpPresentation\Style\Fill $pValue
+     * @return \foTYPE\PhpPresentation\AbstractShape
      */
     public function setFill(Fill $pValue = null)
     {
@@ -341,7 +341,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Get Border
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getBorder()
     {
@@ -351,7 +351,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Get Shadow
      *
-     * @return \PhpOffice\PhpPresentation\Style\Shadow
+     * @return \foTYPE\PhpPresentation\Style\Shadow
      */
     public function getShadow()
     {
@@ -361,7 +361,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Set Shadow
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Shadow $pValue
+     * @param  \foTYPE\PhpPresentation\Style\Shadow $pValue
      * @throws \Exception
      * @return self
      */
@@ -384,7 +384,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Get Hyperlink
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Hyperlink
+     * @return \foTYPE\PhpPresentation\Shape\Hyperlink
      */
     public function getHyperlink()
     {
@@ -397,7 +397,7 @@ abstract class AbstractShape implements ComparableInterface
     /**
      * Set Hyperlink
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\Hyperlink $pHyperlink
+     * @param  \foTYPE\PhpPresentation\Shape\Hyperlink $pHyperlink
      * @throws \Exception
      * @return self
      */
@@ -457,7 +457,7 @@ abstract class AbstractShape implements ComparableInterface
     }
 
     /**
-     * @param \PhpOffice\PhpPresentation\Shape\Placeholder $placeholder
+     * @param \foTYPE\PhpPresentation\Shape\Placeholder $placeholder
      * @return $this
      */
     public function setPlaceHolder(Placeholder $placeholder)

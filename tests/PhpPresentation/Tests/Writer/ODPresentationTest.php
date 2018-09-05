@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer;
+namespace foTYPE\PhpPresentation\Tests\Writer;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\ODPresentation
+ * Test class for foTYPE\PhpPresentation\Writer\ODPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\ODPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\ODPresentation
  */
 class ODPresentationTest extends PhpPresentationTestCase
 {

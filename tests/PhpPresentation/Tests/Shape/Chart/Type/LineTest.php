@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Line element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Type\Line
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Type\Line
  */
 class LineTest extends TestCase
 {

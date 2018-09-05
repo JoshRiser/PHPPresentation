@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Alignment
+ * \foTYPE\PhpPresentation\Style\Alignment
  */
 class Alignment implements ComparableInterface
 {
@@ -112,7 +112,7 @@ class Alignment implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Alignment
+     * Create a new \foTYPE\PhpPresentation\Style\Alignment
      */
     public function __construct()
     {
@@ -135,7 +135,7 @@ class Alignment implements ComparableInterface
      * Set Horizontal
      *
      * @param  string                        $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setHorizontal($pValue = self::HORIZONTAL_LEFT)
     {
@@ -161,7 +161,7 @@ class Alignment implements ComparableInterface
      * Set Vertical
      *
      * @param  string                        $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setVertical($pValue = self::VERTICAL_BASE)
     {
@@ -188,7 +188,7 @@ class Alignment implements ComparableInterface
      *
      * @param  int                           $pValue Ranging 0 - 8
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setLevel($pValue = 0)
     {
@@ -214,7 +214,7 @@ class Alignment implements ComparableInterface
      * Set indent
      *
      * @param  int                           $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setIndent($pValue = 0)
     {
@@ -241,7 +241,7 @@ class Alignment implements ComparableInterface
      * Set margin left
      *
      * @param  int                           $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setMarginLeft($pValue = 0)
     {
@@ -268,7 +268,7 @@ class Alignment implements ComparableInterface
      * Set margin ight
      *
      * @param  int                           $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setMarginRight($pValue = 0)
     {
@@ -295,7 +295,7 @@ class Alignment implements ComparableInterface
      * Set margin top
      *
      * @param  int                           $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setMarginTop($pValue = 0)
     {
@@ -318,7 +318,7 @@ class Alignment implements ComparableInterface
      * Set margin bottom
      *
      * @param  int                           $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function setMarginBottom($pValue = 0)
     {

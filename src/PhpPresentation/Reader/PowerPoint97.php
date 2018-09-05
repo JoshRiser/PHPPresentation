@@ -15,21 +15,21 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Reader;
+namespace foTYPE\PhpPresentation\Reader;
 
 use PhpOffice\Common\Microsoft\OLERead;
 use PhpOffice\Common\Text;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\Shape;
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
-use PhpOffice\PhpPresentation\Shape\Line;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\Shape;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Bullet;
 
 /**
  * Serialized format reader
@@ -365,7 +365,7 @@ class PowerPoint97 implements ReaderInterface
     private $currentNote;
 
     /**
-     * Can the current \PhpOffice\PhpPresentation\Reader\ReaderInterface read the file?
+     * Can the current \foTYPE\PhpPresentation\Reader\ReaderInterface read the file?
      *
      * @param  string $pFilename
      * @throws \Exception
@@ -405,14 +405,14 @@ class PowerPoint97 implements ReaderInterface
      * Loads PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      * @throws \Exception
      */
     public function load($pFilename)
     {
         // Unserialize... First make sure the file supports it!
         if (!$this->fileSupportsUnserializePhpPresentation($pFilename)) {
-            throw new \Exception("Invalid file format for PhpOffice\PhpPresentation\Reader\PowerPoint97: " . $pFilename . ".");
+            throw new \Exception("Invalid file format for foTYPE\PhpPresentation\Reader\PowerPoint97: " . $pFilename . ".");
         }
 
         return $this->loadFile($pFilename);
@@ -422,7 +422,7 @@ class PowerPoint97 implements ReaderInterface
      * Load PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      */
     private function loadFile($pFilename)
     {

@@ -15,9 +15,9 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Writer;
+namespace foTYPE\PhpPresentation\Tests\Writer;
 
-use PhpOffice\PhpPresentation\Writer;
+use foTYPE\PhpPresentation\Writer;
 
 /**
  * Mock class for AbstractWriter
@@ -28,7 +28,7 @@ class AbstractWriter extends Writer\AbstractWriter
     /**
      * public wrapper for protected method
      *
-     * @return \PhpOffice\PhpPresentation\Shape\AbstractDrawing[] All drawings in PhpPresentation
+     * @return \foTYPE\PhpPresentation\Shape\AbstractDrawing[] All drawings in PhpPresentation
      * @throws \Exception
      */
     public function allDrawings()

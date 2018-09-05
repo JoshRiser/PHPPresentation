@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Slide\Background;
+namespace foTYPE\PhpPresentation\Slide\Background;
 
-use PhpOffice\PhpPresentation\Slide\AbstractBackground;
-use PhpOffice\PhpPresentation\Style\Color as StyleColor;
+use foTYPE\PhpPresentation\Slide\AbstractBackground;
+use foTYPE\PhpPresentation\Style\Color as StyleColor;
 
 class Color extends AbstractBackground
 {

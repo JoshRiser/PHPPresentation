@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
  * IOFactory
@@ -34,7 +34,7 @@ class IOFactory
      *
      * @param PhpPresentation $phpPresentation
      * @param string $name
-     * @return \PhpOffice\PhpPresentation\Writer\WriterInterface
+     * @return \foTYPE\PhpPresentation\Writer\WriterInterface
      */
     public static function createWriter(PhpPresentation $phpPresentation, $name = 'PowerPoint2007')
     {
@@ -46,7 +46,7 @@ class IOFactory
      * Create reader
      *
      * @param  string $name
-     * @return \PhpOffice\PhpPresentation\Reader\ReaderInterface
+     * @return \foTYPE\PhpPresentation\Reader\ReaderInterface
      */
     public static function createReader($name = '')
     {
@@ -55,7 +55,7 @@ class IOFactory
     }
 
     /**
-     * Loads PhpPresentation from file using automatic \PhpOffice\PhpPresentation\Reader\ReaderInterface resolution
+     * Loads PhpPresentation from file using automatic \foTYPE\PhpPresentation\Reader\ReaderInterface resolution
      *
      * @param  string        $pFilename
      * @return PhpPresentation
@@ -71,7 +71,7 @@ class IOFactory
             }
         }
 
-        throw new \Exception("Could not automatically determine \PhpOffice\PhpPresentation\Reader\ReaderInterface for file.");
+        throw new \Exception("Could not automatically determine \foTYPE\PhpPresentation\Reader\ReaderInterface for file.");
     }
 
     /**
@@ -80,7 +80,7 @@ class IOFactory
      * @param string $class
      * @param string $name
      * @param string $type
-     * @param \PhpOffice\PhpPresentation\PhpPresentation $phpPresentation
+     * @param \foTYPE\PhpPresentation\PhpPresentation $phpPresentation
      * @throws \Exception
      * @return
      */

@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Outline;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Outline;
 
-abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer\AbstractDecoratorWriter
+abstract class AbstractDecoratorWriter extends \foTYPE\PhpPresentation\Writer\AbstractDecoratorWriter
 {
     /**
      * Write relationship
@@ -47,7 +47,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
      * Write Border
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter    XML Writer
-     * @param  \PhpOffice\PhpPresentation\Style\Border     $pBorder      Border
+     * @param  \foTYPE\PhpPresentation\Style\Border     $pBorder      Border
      * @param  string                         $pElementName Element name
      * @throws \Exception
      */
@@ -140,7 +140,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
      * Write Fill
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Style\Fill       $pFill     Fill style
+     * @param  \foTYPE\PhpPresentation\Style\Fill       $pFill     Fill style
      * @throws \Exception
      */
     protected function writeFill(XMLWriter $objWriter, $pFill)
@@ -175,7 +175,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
      * Write Solid Fill
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Style\Fill       $pFill     Fill style
+     * @param  \foTYPE\PhpPresentation\Style\Fill       $pFill     Fill style
      * @throws \Exception
      */
     protected function writeSolidFill(XMLWriter $objWriter, Fill $pFill)
@@ -190,7 +190,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
      * Write Gradient Fill
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Style\Fill       $pFill     Fill style
+     * @param  \foTYPE\PhpPresentation\Style\Fill       $pFill     Fill style
      * @throws \Exception
      */
     protected function writeGradientFill(XMLWriter $objWriter, Fill $pFill)
@@ -227,7 +227,7 @@ abstract class AbstractDecoratorWriter extends \PhpOffice\PhpPresentation\Writer
      * Write Pattern Fill
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Style\Fill       $pFill     Fill style
+     * @param  \foTYPE\PhpPresentation\Style\Fill       $pFill     Fill style
      * @throws \Exception
      */
     protected function writePatternFill(XMLWriter $objWriter, Fill $pFill)

@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Shape\Drawing;
 
-use PhpOffice\PhpPresentation\Shape\AbstractGraphic;
+use foTYPE\PhpPresentation\Shape\AbstractGraphic;
 
 abstract class AbstractDrawingAdapter extends AbstractGraphic
 {

@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Style;
+namespace foTYPE\PhpPresentation\Tests\Style;
 
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class FillTest extends TestCase
 {

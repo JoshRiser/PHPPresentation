@@ -15,18 +15,18 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\DocumentLayout;
-use PhpOffice\PhpPresentation\DocumentProperties;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\PresentationProperties;
+use foTYPE\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\DocumentProperties;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\PresentationProperties;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class PhpPresentationTest extends TestCase
 {

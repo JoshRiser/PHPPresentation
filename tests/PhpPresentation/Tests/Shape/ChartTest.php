@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Chart;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Chart element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart
  */
 class ChartTest extends TestCase
 {

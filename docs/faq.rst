@@ -31,7 +31,7 @@ without having to specify the full class name in your code:
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\MemoryDrawing as MemoryDrawing;
+    use foTYPE\PhpPresentation\Shape\MemoryDrawing as MemoryDrawing;
 
 If you *have* followed the installation instructions and you *have* added
 the necessary ``use`` statements to your code, then maybe you are still

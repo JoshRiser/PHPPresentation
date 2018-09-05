@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Reader;
+namespace foTYPE\PhpPresentation\Reader;
 
 /**
  * Reader interface
@@ -23,7 +23,7 @@ namespace PhpOffice\PhpPresentation\Reader;
 interface ReaderInterface
 {
     /**
-     * Can the current \PhpOffice\PhpPresentation\Reader\ReaderInterface read the file?
+     * Can the current \foTYPE\PhpPresentation\Reader\ReaderInterface read the file?
      *
      * @param  string  $pFilename
      * @return boolean
@@ -34,7 +34,7 @@ interface ReaderInterface
      * Loads PhpPresentation from file
      *
      * @param  string    $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      * @throws \Exception
      */
     public function load($pFilename);

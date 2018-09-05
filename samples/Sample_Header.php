@@ -2,20 +2,20 @@
 /**
  * Header file
 */
-use PhpOffice\PhpPresentation\Autoloader;
-use PhpOffice\PhpPresentation\IOFactory;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\DocumentLayout;
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\BreakElement;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Autoloader;
+use foTYPE\PhpPresentation\IOFactory;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\BreakElement;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Color;
 
 error_reporting(E_ALL);
 define('CLI', (PHP_SAPI == 'cli') ? true : false);
@@ -101,7 +101,7 @@ if ($handle = opendir('.')) {
 /**
  * Write documents
  *
- * @param \PhpOffice\PhpPresentation\PhpPresentation $phpPresentation
+ * @param \foTYPE\PhpPresentation\PhpPresentation $phpPresentation
  * @param string $filename
  * @param array $writers
  * @return string
@@ -171,9 +171,9 @@ function getEndingNotes($writers)
  * Creates a templated slide
  *
  * @param PHPPresentation $objPHPPresentation
- * @return \PhpOffice\PhpPresentation\Slide
+ * @return \foTYPE\PhpPresentation\Slide
  */
-function createTemplatedSlide(PhpOffice\PhpPresentation\PhpPresentation $objPHPPresentation)
+function createTemplatedSlide(foTYPE\PhpPresentation\PhpPresentation $objPHPPresentation)
 {
     // Create slide
     $slide = $objPHPPresentation->createSlide();
@@ -300,7 +300,7 @@ class PhpPptTree {
             $this->append('<div class="infoBlk" id="div'.$oSlide->getHashCode().'Info">');
             $this->append('<dl>');
             $this->append('<dt>HashCode</dt><dd>'.$oSlide->getHashCode().'</dd>');
-            $this->append('<dt>Slide Layout</dt><dd>Layout::'.$this->getConstantName('\PhpOffice\PhpPresentation\Slide\Layout', $oSlide->getSlideLayout()).'</dd>');
+            $this->append('<dt>Slide Layout</dt><dd>Layout::'.$this->getConstantName('\foTYPE\PhpPresentation\Slide\Layout', $oSlide->getSlideLayout()).'</dd>');
             
             $this->append('<dt>Offset X</dt><dd>'.$oSlide->getOffsetX().'</dd>');
             $this->append('<dt>Offset Y</dt><dd>'.$oSlide->getOffsetY().'</dd>');
@@ -357,10 +357,10 @@ class PhpPptTree {
             $this->append('<dd>None</dd>');
         } else {
             switch($oShape->getFill()->getFillType()) {
-                case \PhpOffice\PhpPresentation\Style\Fill::FILL_NONE:
+                case \foTYPE\PhpPresentation\Style\Fill::FILL_NONE:
                     $this->append('<dd>None</dd>');
                     break;
-                case \PhpOffice\PhpPresentation\Style\Fill::FILL_SOLID:
+                case \foTYPE\PhpPresentation\Style\Fill::FILL_SOLID:
                     $this->append('<dd>Solid (');
                     $this->append('Color : #'.$oShape->getFill()->getStartColor()->getRGB());
                     $this->append(' - Alpha : '.$oShape->getFill()->getStartColor()->getAlpha().'%');
@@ -389,12 +389,12 @@ class PhpPptTree {
             $this->append('<dd>');
             foreach ($oShape->getParagraphs() as $oParagraph) {
                 $this->append('Paragraph<dl>');
-                $this->append('<dt>Alignment Horizontal</dt><dd> Alignment::'.$this->getConstantName('\PhpOffice\PhpPresentation\Style\Alignment', $oParagraph->getAlignment()->getHorizontal()).'</dd>');
-                $this->append('<dt>Alignment Vertical</dt><dd> Alignment::'.$this->getConstantName('\PhpOffice\PhpPresentation\Style\Alignment', $oParagraph->getAlignment()->getVertical()).'</dd>');
+                $this->append('<dt>Alignment Horizontal</dt><dd> Alignment::'.$this->getConstantName('\foTYPE\PhpPresentation\Style\Alignment', $oParagraph->getAlignment()->getHorizontal()).'</dd>');
+                $this->append('<dt>Alignment Vertical</dt><dd> Alignment::'.$this->getConstantName('\foTYPE\PhpPresentation\Style\Alignment', $oParagraph->getAlignment()->getVertical()).'</dd>');
                 $this->append('<dt>Alignment Margin (L / R)</dt><dd>'.$oParagraph->getAlignment()->getMarginLeft().' px / '.$oParagraph->getAlignment()->getMarginRight().'px</dd>');
                 $this->append('<dt>Alignment Indent</dt><dd>'.$oParagraph->getAlignment()->getIndent().' px</dd>');
                 $this->append('<dt>Alignment Level</dt><dd>'.$oParagraph->getAlignment()->getLevel().'</dd>');
-                $this->append('<dt>Bullet Style</dt><dd> Bullet::'.$this->getConstantName('\PhpOffice\PhpPresentation\Style\Bullet', $oParagraph->getBulletStyle()->getBulletType()).'</dd>');
+                $this->append('<dt>Bullet Style</dt><dd> Bullet::'.$this->getConstantName('\foTYPE\PhpPresentation\Style\Bullet', $oParagraph->getBulletStyle()->getBulletType()).'</dd>');
                 if ($oParagraph->getBulletStyle()->getBulletType() != Bullet::TYPE_NONE) {
                     $this->append('<dt>Bullet Font</dt><dd>' . $oParagraph->getBulletStyle()->getBulletFont() . '</dd>');
                     $this->append('<dt>Bullet Color</dt><dd>' . $oParagraph->getBulletStyle()->getBulletColor()->getARGB() . '</dd>');
@@ -425,7 +425,7 @@ class PhpPptTree {
                         $this->append('<dt>Font Transform</dt><dd>');
                             $this->append('<abbr title="Bold">Bold</abbr> : '.($oRichText->getFont()->isBold() ? 'Y' : 'N').' - ');
                             $this->append('<abbr title="Italic">Italic</abbr> : '.($oRichText->getFont()->isItalic() ? 'Y' : 'N').' - ');
-                            $this->append('<abbr title="Underline">Underline</abbr> : Underline::'.$this->getConstantName('\PhpOffice\PhpPresentation\Style\Font', $oRichText->getFont()->getUnderline()).' - ');
+                            $this->append('<abbr title="Underline">Underline</abbr> : Underline::'.$this->getConstantName('\foTYPE\PhpPresentation\Style\Font', $oRichText->getFont()->getUnderline()).' - ');
                             $this->append('<abbr title="Strikethrough">Strikethrough</abbr> : '.($oRichText->getFont()->isStrikethrough() ? 'Y' : 'N').' - ');
                             $this->append('<abbr title="SubScript">SubScript</abbr> : '.($oRichText->getFont()->isSubScript() ? 'Y' : 'N').' - ');
                             $this->append('<abbr title="SuperScript">SuperScript</abbr> : '.($oRichText->getFont()->isSuperScript() ? 'Y' : 'N'));

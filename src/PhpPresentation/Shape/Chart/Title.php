@@ -15,14 +15,14 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Font;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Title
+ * \foTYPE\PhpPresentation\Shape\Chart\Title
  */
 class Title implements ComparableInterface
 {
@@ -71,14 +71,14 @@ class Title implements ComparableInterface
     /**
      * Alignment
      *
-     * @var \PhpOffice\PhpPresentation\Style\Alignment
+     * @var \foTYPE\PhpPresentation\Style\Alignment
      */
     private $alignment;
 
     /**
      * Font
      *
-     * @var \PhpOffice\PhpPresentation\Style\Font
+     * @var \foTYPE\PhpPresentation\Style\Font
      */
     private $font;
 
@@ -90,7 +90,7 @@ class Title implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Chart\Title instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Chart\Title instance
      */
     public function __construct()
     {
@@ -114,7 +114,7 @@ class Title implements ComparableInterface
      * Set Visible
      *
      * @param  boolean                         $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setVisible($value = true)
     {
@@ -137,7 +137,7 @@ class Title implements ComparableInterface
      * Set Text
      *
      * @param  string                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setText($value = null)
     {
@@ -160,7 +160,7 @@ class Title implements ComparableInterface
      * Set OffsetX (as a fraction of the chart)
      *
      * @param  float                           $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setOffsetX($value = 0.01)
     {
@@ -183,7 +183,7 @@ class Title implements ComparableInterface
      * Set OffsetY (as a fraction of the chart)
      *
      * @param  float                           $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setOffsetY($value = 0.01)
     {
@@ -206,7 +206,7 @@ class Title implements ComparableInterface
      * Set Width (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setWidth($value = 0)
     {
@@ -229,7 +229,7 @@ class Title implements ComparableInterface
      * Set Height (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setHeight($value = 0)
     {
@@ -241,7 +241,7 @@ class Title implements ComparableInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -251,9 +251,9 @@ class Title implements ComparableInterface
     /**
      * Set font
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Font               $pFont Font
+     * @param  \foTYPE\PhpPresentation\Style\Font               $pFont Font
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setFont(Font $pFont = null)
     {
@@ -265,7 +265,7 @@ class Title implements ComparableInterface
     /**
      * Get alignment
      *
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function getAlignment()
     {
@@ -275,8 +275,8 @@ class Title implements ComparableInterface
     /**
      * Set alignment
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Alignment   $alignment
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @param  \foTYPE\PhpPresentation\Style\Alignment   $alignment
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setAlignment(Alignment $alignment)
     {

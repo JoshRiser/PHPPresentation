@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Style\Outline;
+use foTYPE\PhpPresentation\Style\Outline;
 
 class Gridlines
 {

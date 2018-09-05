@@ -21,7 +21,7 @@ It's an alias for :
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Drawing\File;
+    use foTYPE\PhpPresentation\Shape\Drawing\File;
 
     $oShape = new File();
 	$oShape->setName('Unique name')
@@ -34,7 +34,7 @@ GD
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Drawing\Gd;
+    use foTYPE\PhpPresentation\Shape\Drawing\Gd;
 
     $gdImage = @imagecreatetruecolor($width, $height);
 
@@ -51,7 +51,7 @@ Base64
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Drawing\Base64;
+    use foTYPE\PhpPresentation\Shape\Drawing\Base64;
 
     $oShape = new Base64();
     $oShape->setName('Sample image')
@@ -65,7 +65,7 @@ ZipFile
 
 .. code-block:: php
 
-    use PhpOffice\PhpPresentation\Shape\Drawing\ZipFile;
+    use foTYPE\PhpPresentation\Shape\Drawing\ZipFile;
 
     $oShape = new ZipFile();
     $oShape->setName('Sample image')

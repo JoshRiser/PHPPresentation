@@ -1,7 +1,7 @@
 <?php
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\AbstractShape;
 
 class Animation
 {

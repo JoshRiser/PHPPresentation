@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Tests\Shape\Drawing;
 
-use PhpOffice\PhpPresentation\Shape\Drawing\ZipFile;
+use foTYPE\PhpPresentation\Shape\Drawing\ZipFile;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Drawing element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Drawing
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Drawing
  */
 class ZipFileTest extends TestCase
 {

@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart\Type;
+namespace foTYPE\PhpPresentation\Shape\Chart\Type;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D
+ * \foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D
  */
 class Bar3D extends AbstractTypeBar implements ComparableInterface
 {

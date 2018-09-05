@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Writer\ODPresentation;
 
 use PhpOffice\Common\Adapter\Zip\ZipInterface;
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Slide\Background\Image;
 
 class Pictures extends AbstractDecoratorWriter
 {

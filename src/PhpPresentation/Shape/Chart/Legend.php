@@ -15,16 +15,16 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Font;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\Legend
+ * \foTYPE\PhpPresentation\Shape\Chart\Legend
  */
 class Legend implements ComparableInterface
 {
@@ -80,33 +80,33 @@ class Legend implements ComparableInterface
     /**
      * Font
      *
-     * @var \PhpOffice\PhpPresentation\Style\Font
+     * @var \foTYPE\PhpPresentation\Style\Font
      */
     private $font;
 
     /**
      * Border
      *
-     * @var \PhpOffice\PhpPresentation\Style\Border
+     * @var \foTYPE\PhpPresentation\Style\Border
      */
     private $border;
 
     /**
      * Fill
      *
-     * @var \PhpOffice\PhpPresentation\Style\Fill
+     * @var \foTYPE\PhpPresentation\Style\Fill
      */
     private $fill;
 
     /**
      * Alignment
      *
-     * @var \PhpOffice\PhpPresentation\Style\Alignment
+     * @var \foTYPE\PhpPresentation\Style\Alignment
      */
     private $alignment;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Chart\Legend instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Chart\Legend instance
      */
     public function __construct()
     {
@@ -130,7 +130,7 @@ class Legend implements ComparableInterface
      * Set Visible
      *
      * @param  boolean                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function setVisible($value = true)
     {
@@ -152,7 +152,7 @@ class Legend implements ComparableInterface
      * Set Position
      *
      * @param  string                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setPosition($value = self::POSITION_RIGHT)
     {
@@ -174,7 +174,7 @@ class Legend implements ComparableInterface
      * Set OffsetX (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function setOffsetX($value = 0)
     {
@@ -196,7 +196,7 @@ class Legend implements ComparableInterface
      * Set OffsetY (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function setOffsetY($value = 0)
     {
@@ -218,7 +218,7 @@ class Legend implements ComparableInterface
      * Set Width (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function setWidth($value = 0)
     {
@@ -240,7 +240,7 @@ class Legend implements ComparableInterface
      * Set Height (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Legend
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Legend
      */
     public function setHeight($value = 0)
     {
@@ -251,7 +251,7 @@ class Legend implements ComparableInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -261,9 +261,9 @@ class Legend implements ComparableInterface
     /**
      * Set font
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Font               $pFont Font
+     * @param  \foTYPE\PhpPresentation\Style\Font               $pFont Font
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setFont(Font $pFont = null)
     {
@@ -274,7 +274,7 @@ class Legend implements ComparableInterface
     /**
      * Get Border
      *
-     * @return \PhpOffice\PhpPresentation\Style\Border
+     * @return \foTYPE\PhpPresentation\Style\Border
      */
     public function getBorder()
     {
@@ -284,8 +284,8 @@ class Legend implements ComparableInterface
     /**
      * Set Border
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Border $border
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @param  \foTYPE\PhpPresentation\Style\Border $border
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setBorder(Border $border)
     {
@@ -296,7 +296,7 @@ class Legend implements ComparableInterface
     /**
      * Get Fill
      *
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function getFill()
     {
@@ -306,8 +306,8 @@ class Legend implements ComparableInterface
     /**
      * Set Fill
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Fill $fill
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @param  \foTYPE\PhpPresentation\Style\Fill $fill
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setFill(Fill $fill)
     {
@@ -318,7 +318,7 @@ class Legend implements ComparableInterface
     /**
      * Get alignment
      *
-     * @return \PhpOffice\PhpPresentation\Style\Alignment
+     * @return \foTYPE\PhpPresentation\Style\Alignment
      */
     public function getAlignment()
     {
@@ -328,8 +328,8 @@ class Legend implements ComparableInterface
     /**
      * Set alignment
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Alignment          $alignment
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\Paragraph
+     * @param  \foTYPE\PhpPresentation\Style\Alignment          $alignment
+     * @return \foTYPE\PhpPresentation\Shape\RichText\Paragraph
      */
     public function setAlignment(Alignment $alignment)
     {

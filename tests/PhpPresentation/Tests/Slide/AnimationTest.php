@@ -15,21 +15,21 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Slide\Animation;
+use foTYPE\PhpPresentation\Slide\Animation;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Animation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Slide\Animation
+ * @coversDefaultClass foTYPE\PhpPresentation\Slide\Animation
  */
 class AnimationTest extends TestCase
 {
     public function testShape()
     {
-        $oStub = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\AbstractShape');
+        $oStub = $this->getMockForAbstractClass('foTYPE\PhpPresentation\AbstractShape');
 
         $object = new Animation();
 

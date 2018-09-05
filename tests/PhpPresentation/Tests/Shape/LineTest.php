@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Line;
-use PhpOffice\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Style\Border;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for memory drawing element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Line
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Line
  */
 class LineTest extends TestCase
 {

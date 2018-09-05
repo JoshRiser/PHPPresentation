@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Reader;
+namespace foTYPE\PhpPresentation\Tests\Reader;
 
-use PhpOffice\PhpPresentation\Reader\Serialized;
+use foTYPE\PhpPresentation\Reader\Serialized;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for serialized reader
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Reader\Serialized
+ * @coversDefaultClass foTYPE\PhpPresentation\Reader\Serialized
  */
 class SerializedTest extends TestCase
 {
@@ -50,7 +50,7 @@ class SerializedTest extends TestCase
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage Invalid file format for PhpOffice\PhpPresentation\Reader\Serialized:
+     * @expectedExceptionMessage Invalid file format for foTYPE\PhpPresentation\Reader\Serialized:
      */
     public function testLoadFileBadFormat()
     {

@@ -15,19 +15,19 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Legend;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Shape\Chart\Legend;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Legend element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Legend
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Legend
  */
 class LegendTest extends TestCase
 {

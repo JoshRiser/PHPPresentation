@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Comment;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Chart element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Comment
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Comment
  */
 class CommentTest extends TestCase
 {
@@ -42,7 +42,7 @@ class CommentTest extends TestCase
     {
         $object = new Comment();
 
-        $oStub = $this->getMockBuilder('PhpOffice\PhpPresentation\Shape\Comment\Author')->getMock();
+        $oStub = $this->getMockBuilder('foTYPE\PhpPresentation\Shape\Comment\Author')->getMock();
 
         $this->assertNull($object->getAuthor());
         $this->assertInstanceOf('PhpOffice\\PhpPresentation\\Shape\\Comment', $object->setAuthor($oStub));

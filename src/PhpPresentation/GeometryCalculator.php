@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
 /**
- * PhpOffice\PhpPresentation\GeometryCalculator
+ * foTYPE\PhpPresentation\GeometryCalculator
  */
 class GeometryCalculator
 {
@@ -28,7 +28,7 @@ class GeometryCalculator
     /**
     * Calculate X and Y offsets for a set of shapes within a container such as a slide or group.
     *
-    * @param  \PhpOffice\PhpPresentation\ShapeContainerInterface $container
+    * @param  \foTYPE\PhpPresentation\ShapeContainerInterface $container
     * @return array
     */
     public static function calculateOffsets(ShapeContainerInterface $container)
@@ -61,7 +61,7 @@ class GeometryCalculator
     /**
     * Calculate X and Y extents for a set of shapes within a container such as a slide or group.
     *
-    * @param  \PhpOffice\PhpPresentation\ShapeContainerInterface $container
+    * @param  \foTYPE\PhpPresentation\ShapeContainerInterface $container
     * @return array
     */
     public static function calculateExtents(ShapeContainerInterface $container)

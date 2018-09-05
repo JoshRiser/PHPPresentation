@@ -2,7 +2,7 @@
 
 namespace PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Shape\Media;
 use PHPUnit\Framework\TestCase;
 
 class MediaTest extends TestCase

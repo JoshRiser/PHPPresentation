@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Shape\Placeholder;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -194,7 +194,7 @@ class AbstractShapeTest extends TestCase
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage A \PhpOffice\PhpPresentation\ShapeContainerInterface has already been assigned. Shapes can only exist on one \PhpOffice\PhpPresentation\ShapeContainerInterface.
+     * @expectedExceptionMessage A \foTYPE\PhpPresentation\ShapeContainerInterface has already been assigned. Shapes can only exist on one \foTYPE\PhpPresentation\ShapeContainerInterface.
      */
     public function testContainerException()
     {

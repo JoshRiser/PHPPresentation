@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Table;
+namespace foTYPE\PhpPresentation\Tests\Shape\Table;
 
-use PhpOffice\PhpPresentation\Shape\Table\Row;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Shape\Table\Row;
+use foTYPE\PhpPresentation\Style\Fill;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Row element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Row
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Row
  */
 class RowTest extends TestCase
 {

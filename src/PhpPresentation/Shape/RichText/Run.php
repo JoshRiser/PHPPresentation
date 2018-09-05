@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\RichText;
+namespace foTYPE\PhpPresentation\Shape\RichText;
 
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Style\Font;
 
 /**
  * Rich text run
@@ -27,12 +27,12 @@ class Run extends TextElement implements TextElementInterface
     /**
      * Font
      *
-     * @var \PhpOffice\PhpPresentation\Style\Font
+     * @var \foTYPE\PhpPresentation\Style\Font
      */
     private $font;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\RichText\Run instance
+     * Create a new \foTYPE\PhpPresentation\Shape\RichText\Run instance
      *
      * @param string $pText Text
      */
@@ -46,7 +46,7 @@ class Run extends TextElement implements TextElementInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -56,9 +56,9 @@ class Run extends TextElement implements TextElementInterface
     /**
      * Set font
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Font                  $pFont Font
+     * @param  \foTYPE\PhpPresentation\Style\Font                  $pFont Font
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setFont(Font $pFont = null)
     {

@@ -1,18 +1,18 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Tests\Writer\ODPresentation;
 
-use PhpOffice\PhpPresentation\DocumentLayout;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\DocumentLayout;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\ODPresentation
+ * Test class for foTYPE\PhpPresentation\Writer\ODPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\ODPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\ODPresentation
  */
 class StylesTest extends PhpPresentationTestCase
 {

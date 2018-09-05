@@ -15,16 +15,16 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\Shape\Chart as ShapeChart;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Drawing as ShapeDrawing;
+use foTYPE\PhpPresentation\Shape\Chart as ShapeChart;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Drawing as ShapeDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\ContentTypes
+ * \foTYPE\PhpPresentation\Writer\PowerPoint2007\ContentTypes
  */
 class ContentTypes extends AbstractDecoratorWriter
 {

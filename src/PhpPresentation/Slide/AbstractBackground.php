@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
 class AbstractBackground
 {

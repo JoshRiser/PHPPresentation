@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Tests\Shape\Drawing;
 
-use PhpOffice\PhpPresentation\Shape\Drawing\Base64;
+use foTYPE\PhpPresentation\Shape\Drawing\Base64;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Drawing element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Drawing
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Drawing
  */
 class Base64Test extends TestCase
 {

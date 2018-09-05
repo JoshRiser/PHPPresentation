@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape;
+namespace foTYPE\PhpPresentation\Tests\Shape;
 
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for RichText element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\RichText
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\RichText
  */
 class RichTextTest extends TestCase
 {
@@ -107,7 +107,7 @@ class RichTextTest extends TestCase
 
     /**
      * @expectedException \Exception
-     * expectedExceptionMessage Invalid \PhpOffice\PhpPresentation\Shape\RichText\Paragraph[] array passed.
+     * expectedExceptionMessage Invalid \foTYPE\PhpPresentation\Shape\RichText\Paragraph[] array passed.
      */
     public function testParagraphsException()
     {

@@ -13,7 +13,7 @@ folder <https://github.com/PHPOffice/PHPPresentation/tree/master/samples/>`__.
 .. code-block:: php
 
     require_once 'src/PhpPresentation/Autoloader.php';
-    \PhpOffice\PhpPresentation\Autoloader::register();
+    \foTYPE\PhpPresentation\Autoloader::register();
 
     $objPHPPresentation = new PhpPresentation();
 

@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\RichText;
+namespace foTYPE\PhpPresentation\Tests\Shape\RichText;
 
-use PhpOffice\PhpPresentation\Shape\RichText\Run;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Shape\RichText\Run;
+use foTYPE\PhpPresentation\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Run element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\RichText\Run
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\RichText\Run
  */
 class RunTest extends TestCase
 {

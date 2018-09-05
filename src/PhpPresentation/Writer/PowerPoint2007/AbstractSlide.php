@@ -14,33 +14,33 @@
  * @copyright   2009-2015 PHPPresentation contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\Text;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Shape\AbstractGraphic;
-use PhpOffice\PhpPresentation\Shape\Chart as ShapeChart;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Drawing\Gd as ShapeDrawingGd;
-use PhpOffice\PhpPresentation\Shape\Drawing\File as ShapeDrawingFile;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Line;
-use PhpOffice\PhpPresentation\Shape\Media;
-use PhpOffice\PhpPresentation\Shape\Placeholder;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\BreakElement;
-use PhpOffice\PhpPresentation\Shape\RichText\Run;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Shape\Table as ShapeTable;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Note;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Bullet;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Shadow;
-use PhpOffice\PhpPresentation\Slide\AbstractSlide as AbstractSlideAlias;
+use foTYPE\PhpPresentation\Shape\AbstractGraphic;
+use foTYPE\PhpPresentation\Shape\Chart as ShapeChart;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Drawing\Gd as ShapeDrawingGd;
+use foTYPE\PhpPresentation\Shape\Drawing\File as ShapeDrawingFile;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\BreakElement;
+use foTYPE\PhpPresentation\Shape\RichText\Run;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Shape\Table as ShapeTable;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Note;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Bullet;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Slide\AbstractSlide as AbstractSlideAlias;
 
 abstract class AbstractSlide extends AbstractDecoratorWriter
 {
@@ -114,7 +114,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
 
     /**
      * @param XMLWriter $objWriter
-     * @param \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[] $shapes
+     * @param \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[] $shapes
      * @param int $shapeId
      * @throws \Exception
      */
@@ -150,7 +150,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write txt
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\RichText $shape
+     * @param  \foTYPE\PhpPresentation\Shape\RichText $shape
      * @param  int $shapeId
      * @throws \Exception
      */
@@ -300,7 +300,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write table
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Table $shape
+     * @param  \foTYPE\PhpPresentation\Shape\Table $shape
      * @param  int $shapeId
      * @throws \Exception
      */
@@ -500,7 +500,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write paragraphs
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\RichText\Paragraph[] $paragraphs
+     * @param  \foTYPE\PhpPresentation\Shape\RichText\Paragraph[] $paragraphs
      * @param  bool $bIsPlaceholder
      * @throws \Exception
      */
@@ -629,7 +629,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write Line Shape
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param \PhpOffice\PhpPresentation\Shape\Line $shape
+     * @param \foTYPE\PhpPresentation\Shape\Line $shape
      * @param  int $shapeId
      */
     protected function writeShapeLine(XMLWriter $objWriter, Line $shape, $shapeId)
@@ -756,7 +756,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write hyperlink
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param \PhpOffice\PhpPresentation\AbstractShape|\PhpOffice\PhpPresentation\Shape\RichText\TextElement $shape
+     * @param \foTYPE\PhpPresentation\AbstractShape|\foTYPE\PhpPresentation\Shape\RichText\TextElement $shape
      */
     protected function writeHyperlink(XMLWriter $objWriter, $shape)
     {
@@ -1064,7 +1064,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write chart
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param \PhpOffice\PhpPresentation\Shape\Chart $shape
+     * @param \foTYPE\PhpPresentation\Shape\Chart $shape
      * @param  int $shapeId
      */
     protected function writeShapeChart(XMLWriter $objWriter, ShapeChart $shape, $shapeId)
@@ -1124,7 +1124,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write pic
      *
      * @param  \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\AbstractGraphic $shape
+     * @param  \foTYPE\PhpPresentation\Shape\AbstractGraphic $shape
      * @param  int $shapeId
      * @throws \Exception
      */
@@ -1226,7 +1226,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
      * Write group
      *
      * @param \PhpOffice\Common\XMLWriter $objWriter XML Writer
-     * @param \PhpOffice\PhpPresentation\Shape\Group $group
+     * @param \foTYPE\PhpPresentation\Shape\Group $group
      * @param  int $shapeId
      */
     protected function writeShapeGroup(XMLWriter $objWriter, Group $group, &$shapeId)
@@ -1279,7 +1279,7 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
     }
 
     /**
-     * @param \PhpOffice\PhpPresentation\Slide\AbstractSlide $pSlide
+     * @param \foTYPE\PhpPresentation\Slide\AbstractSlide $pSlide
      * @param $objWriter
      */
     protected function writeSlideBackground(AbstractSlideAlias $pSlide, XMLWriter $objWriter)

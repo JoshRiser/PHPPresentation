@@ -1,30 +1,30 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Tests\Writer\ODPresentation;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
-use PhpOffice\PhpPresentation\Shape\Chart\Gridlines;
-use PhpOffice\PhpPresentation\Shape\Chart\Legend;
-use PhpOffice\PhpPresentation\Shape\Chart\Marker;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Area;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Doughnut;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Pie3D;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Scatter;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Outline;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\ODPresentation;
+use foTYPE\PhpPresentation\Shape\Chart\Gridlines;
+use foTYPE\PhpPresentation\Shape\Chart\Legend;
+use foTYPE\PhpPresentation\Shape\Chart\Marker;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Area;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Doughnut;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Pie3D;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Scatter;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Outline;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\ODPresentation;
 
 /**
- * Test class for PhpOffice\PhpPresentation\Writer\ODPresentation\Manifest
+ * Test class for foTYPE\PhpPresentation\Writer\ODPresentation\Manifest
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Writer\ODPresentation\ObjectsChart
+ * @coversDefaultClass foTYPE\PhpPresentation\Writer\ODPresentation\ObjectsChart
  */
 class ObjectsChartTest extends PhpPresentationTestCase
 {
@@ -198,11 +198,11 @@ class ObjectsChartTest extends PhpPresentationTestCase
         $elementStyle = '/office:document-content/office:automatic-styles/style:style[@style:name=\'styleTitle\']';
 
         $this->assertTrue($oShape->getTitle()->isVisible());
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(true));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(true));
         $this->assertZipXmlElementExists('Object 1/content.xml', $elementTitle);
         $this->assertZipXmlElementExists('Object 1/content.xml', $elementStyle);
 
-        $this->assertInstanceOf('PhpOffice\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(false));
+        $this->assertInstanceOf('foTYPE\PhpPresentation\Shape\Chart\Title', $oShape->getTitle()->setVisible(false));
         $this->resetPresentationFile();
         $this->assertZipXmlElementNotExists('Object 1/content.xml', $elementTitle);
         $this->assertZipXmlElementNotExists('Object 1/content.xml', $elementStyle);

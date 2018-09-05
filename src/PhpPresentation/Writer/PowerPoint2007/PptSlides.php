@@ -1,21 +1,21 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Shape\Chart as ShapeChart;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Drawing as ShapeDrawing;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Media;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\RichText\Run;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Shape\Table as ShapeTable;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
-use PhpOffice\PhpPresentation\Slide\Note;
+use foTYPE\PhpPresentation\Shape\Chart as ShapeChart;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Drawing as ShapeDrawing;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\RichText\Run;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Shape\Table as ShapeTable;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Slide\Note;
 
 class PptSlides extends AbstractSlide
 {
@@ -49,7 +49,7 @@ class PptSlides extends AbstractSlide
     /**
      * Write slide relationships to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Slide $pSlide
+     * @param  \foTYPE\PhpPresentation\Slide $pSlide
      * @return string              XML Output
      * @throws \Exception
      */
@@ -347,7 +347,7 @@ class PptSlides extends AbstractSlide
     /**
      * Write slide to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Slide $pSlide
+     * @param  \foTYPE\PhpPresentation\Slide $pSlide
      * @return string              XML Output
      * @throws \Exception
      */
@@ -750,7 +750,7 @@ class PptSlides extends AbstractSlide
      * Write pic
      *
      * @param  \PhpOffice\Common\XMLWriter  $objWriter XML Writer
-     * @param  \PhpOffice\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter $shape
+     * @param  \foTYPE\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter $shape
      * @param  int $shapeId
      * @throws \Exception
      */

@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\RichText;
+namespace foTYPE\PhpPresentation\Tests\Shape\RichText;
 
-use PhpOffice\PhpPresentation\Shape\RichText\BreakElement;
+use foTYPE\PhpPresentation\Shape\RichText\BreakElement;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for BreakElement element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\RichText\BreakElement
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\RichText\BreakElement
  */
 class BreakElementTest extends TestCase
 {

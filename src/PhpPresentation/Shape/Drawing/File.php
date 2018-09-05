@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Shape\Drawing;
 
 class File extends AbstractDrawingAdapter
 {
@@ -25,7 +25,7 @@ class File extends AbstractDrawingAdapter
      * @param  string                      $pValue      File path
      * @param  boolean                     $pVerifyFile Verify file
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\Drawing
+     * @return \foTYPE\PhpPresentation\Shape\Drawing
      */
     public function setPath($pValue = '', $pVerifyFile = true)
     {

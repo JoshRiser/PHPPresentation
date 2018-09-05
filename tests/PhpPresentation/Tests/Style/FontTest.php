@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Style;
+namespace foTYPE\PhpPresentation\Tests\Style;
 
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class FontTest extends TestCase
 {
@@ -50,7 +50,7 @@ class FontTest extends TestCase
     /**
      * Test get/set color
      * @expectedException \Exception
-     * @expectedExceptionMessage $pValue must be an instance of \PhpOffice\PhpPresentation\Style\Color
+     * @expectedExceptionMessage $pValue must be an instance of \foTYPE\PhpPresentation\Style\Color
      */
     public function testSetGetColorException()
     {

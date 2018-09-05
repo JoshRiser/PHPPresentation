@@ -1,17 +1,17 @@
 <?php
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 use PhpOffice\Common\Drawing as CommonDrawing;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\Shape\AbstractDrawing;
-use PhpOffice\PhpPresentation\Shape\Chart as ShapeChart;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\Table as ShapeTable;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\SlideMaster;
-use PhpOffice\PhpPresentation\Style\SchemeColor;
-use PhpOffice\PhpPresentation\Slide\Background\Image;
+use foTYPE\PhpPresentation\Shape\AbstractDrawing;
+use foTYPE\PhpPresentation\Shape\Chart as ShapeChart;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\Table as ShapeTable;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\SlideMaster;
+use foTYPE\PhpPresentation\Style\SchemeColor;
+use foTYPE\PhpPresentation\Slide\Background\Image;
 
 class PptSlideMasters extends AbstractSlide
 {
@@ -86,7 +86,7 @@ class PptSlideMasters extends AbstractSlide
     /**
      * Write slide to XML format
      *
-     * @param  \PhpOffice\PhpPresentation\Slide\SlideMaster $pSlide
+     * @param  \foTYPE\PhpPresentation\Slide\SlideMaster $pSlide
      * @return string XML Output
      * @throws \Exception
      */

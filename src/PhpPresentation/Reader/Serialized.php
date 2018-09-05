@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Reader;
+namespace foTYPE\PhpPresentation\Reader;
 
 use PhpOffice\Common\File;
-use PhpOffice\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
+use foTYPE\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
 
 /**
  * Serialized format reader
@@ -26,7 +26,7 @@ use PhpOffice\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
 class Serialized implements ReaderInterface
 {
     /**
-     * Can the current \PhpOffice\PhpPresentation\Reader\ReaderInterface read the file?
+     * Can the current \foTYPE\PhpPresentation\Reader\ReaderInterface read the file?
      *
      * @param  string $pFilename
      * @throws \Exception
@@ -59,7 +59,7 @@ class Serialized implements ReaderInterface
      * Loads PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      * @throws \Exception
      */
     public function load($pFilename)
@@ -71,7 +71,7 @@ class Serialized implements ReaderInterface
 
         // Unserialize... First make sure the file supports it!
         if (!$this->fileSupportsUnserializePhpPresentation($pFilename)) {
-            throw new \Exception("Invalid file format for PhpOffice\PhpPresentation\Reader\Serialized: " . $pFilename . ".");
+            throw new \Exception("Invalid file format for foTYPE\PhpPresentation\Reader\Serialized: " . $pFilename . ".");
         }
 
         return $this->loadSerialized($pFilename);
@@ -81,7 +81,7 @@ class Serialized implements ReaderInterface
      * Load PhpPresentation Serialized file
      *
      * @param  string        $pFilename
-     * @return \PhpOffice\PhpPresentation\PhpPresentation
+     * @return \foTYPE\PhpPresentation\PhpPresentation
      */
     private function loadSerialized($pFilename)
     {

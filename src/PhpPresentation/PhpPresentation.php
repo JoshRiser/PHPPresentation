@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation;
+namespace foTYPE\PhpPresentation;
 
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Iterator;
-use PhpOffice\PhpPresentation\Slide\SlideMaster;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Iterator;
+use foTYPE\PhpPresentation\Slide\SlideMaster;
 
 /**
  * PhpPresentation
@@ -29,28 +29,28 @@ class PhpPresentation
     /**
      * Document properties
      *
-     * @var \PhpOffice\PhpPresentation\DocumentProperties
+     * @var \foTYPE\PhpPresentation\DocumentProperties
      */
     protected $documentProperties;
 
     /**
      * Presentation properties
      *
-     * @var \PhpOffice\PhpPresentation\PresentationProperties
+     * @var \foTYPE\PhpPresentation\PresentationProperties
      */
     protected $presentationProps;
 
     /**
      * Document layout
      *
-     * @var \PhpOffice\PhpPresentation\DocumentLayout
+     * @var \foTYPE\PhpPresentation\DocumentLayout
      */
     protected $layout;
 
     /**
      * Collection of Slide objects
      *
-     * @var \PhpOffice\PhpPresentation\Slide[]
+     * @var \foTYPE\PhpPresentation\Slide[]
      */
     protected $slideCollection = array();
 
@@ -63,7 +63,7 @@ class PhpPresentation
 
     /**
      * Collection of Master Slides
-     * @var \ArrayObject|\PhpOffice\PhpPresentation\Slide\SlideMaster[]
+     * @var \ArrayObject|\foTYPE\PhpPresentation\Slide\SlideMaster[]
      */
     protected $slideMasters;
 
@@ -88,7 +88,7 @@ class PhpPresentation
     /**
      * Get properties
      *
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      * @deprecated for getDocumentProperties
      */
     public function getProperties()
@@ -99,7 +99,7 @@ class PhpPresentation
     /**
      * Set properties
      *
-     * @param  \PhpOffice\PhpPresentation\DocumentProperties $value
+     * @param  \foTYPE\PhpPresentation\DocumentProperties $value
      * @deprecated for setDocumentProperties
      * @return PhpPresentation
      */
@@ -111,7 +111,7 @@ class PhpPresentation
     /**
      * Get properties
      *
-     * @return \PhpOffice\PhpPresentation\DocumentProperties
+     * @return \foTYPE\PhpPresentation\DocumentProperties
      */
     public function getDocumentProperties()
     {
@@ -121,7 +121,7 @@ class PhpPresentation
     /**
      * Set properties
      *
-     * @param  \PhpOffice\PhpPresentation\DocumentProperties $value
+     * @param  \foTYPE\PhpPresentation\DocumentProperties $value
      * @return PhpPresentation
      */
     public function setDocumentProperties(DocumentProperties $value)
@@ -134,7 +134,7 @@ class PhpPresentation
     /**
      * Get presentation properties
      *
-     * @return \PhpOffice\PhpPresentation\PresentationProperties
+     * @return \foTYPE\PhpPresentation\PresentationProperties
      */
     public function getPresentationProperties()
     {
@@ -144,7 +144,7 @@ class PhpPresentation
     /**
      * Set presentation properties
      *
-     * @param  \PhpOffice\PhpPresentation\PresentationProperties $value
+     * @param  \foTYPE\PhpPresentation\PresentationProperties $value
      * @return PhpPresentation
      */
     public function setPresentationProperties(PresentationProperties $value)
@@ -156,7 +156,7 @@ class PhpPresentation
     /**
      * Get layout
      *
-     * @return \PhpOffice\PhpPresentation\DocumentLayout
+     * @return \foTYPE\PhpPresentation\DocumentLayout
      */
     public function getLayout()
     {
@@ -166,7 +166,7 @@ class PhpPresentation
     /**
      * Set layout
      *
-     * @param  \PhpOffice\PhpPresentation\DocumentLayout $value
+     * @param  \foTYPE\PhpPresentation\DocumentLayout $value
      * @return PhpPresentation
      */
     public function setLayout(DocumentLayout $value)
@@ -179,7 +179,7 @@ class PhpPresentation
     /**
      * Get active slide
      *
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function getActiveSlide()
     {
@@ -189,7 +189,7 @@ class PhpPresentation
     /**
      * Create slide and add it to this presentation
      *
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function createSlide()
     {
@@ -201,9 +201,9 @@ class PhpPresentation
     /**
      * Add slide
      *
-     * @param  \PhpOffice\PhpPresentation\Slide $slide
+     * @param  \foTYPE\PhpPresentation\Slide $slide
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function addSlide(Slide $slide = null)
     {
@@ -233,7 +233,7 @@ class PhpPresentation
      * Get slide by index
      *
      * @param  int $index Slide index
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      * @throws \Exception
      */
     public function getSlide($index = 0)
@@ -247,7 +247,7 @@ class PhpPresentation
     /**
      * Get all slides
      *
-     * @return \PhpOffice\PhpPresentation\Slide[]
+     * @return \foTYPE\PhpPresentation\Slide[]
      */
     public function getAllSlides()
     {
@@ -257,7 +257,7 @@ class PhpPresentation
     /**
      * Get index for slide
      *
-     * @param  \PhpOffice\PhpPresentation\Slide\AbstractSlide $slide
+     * @param  \foTYPE\PhpPresentation\Slide\AbstractSlide $slide
      * @return int
      * @throws \Exception
      */
@@ -298,7 +298,7 @@ class PhpPresentation
      *
      * @param  int $index Active slide index
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function setActiveSlideIndex($index = 0)
     {
@@ -313,9 +313,9 @@ class PhpPresentation
     /**
      * Add external slide
      *
-     * @param  \PhpOffice\PhpPresentation\Slide $slide External slide to add
+     * @param  \foTYPE\PhpPresentation\Slide $slide External slide to add
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function addExternalSlide(Slide $slide)
     {
@@ -329,7 +329,7 @@ class PhpPresentation
     /**
      * Get slide iterator
      *
-     * @return \PhpOffice\PhpPresentation\Slide\Iterator
+     * @return \foTYPE\PhpPresentation\Slide\Iterator
      */
     public function getSlideIterator()
     {
@@ -339,7 +339,7 @@ class PhpPresentation
     /**
      * Create a masterslide and add it to this presentation
      *
-     * @return \PhpOffice\PhpPresentation\Slide\SlideMaster
+     * @return \foTYPE\PhpPresentation\Slide\SlideMaster
      */
     public function createMasterSlide()
     {
@@ -351,8 +351,8 @@ class PhpPresentation
     /**
      * Add masterslide
      *
-     * @param  \PhpOffice\PhpPresentation\Slide\SlideMaster $slide
-     * @return \PhpOffice\PhpPresentation\Slide\SlideMaster
+     * @param  \foTYPE\PhpPresentation\Slide\SlideMaster $slide
+     * @return \foTYPE\PhpPresentation\Slide\SlideMaster
      * @throws \Exception
      */
     public function addMasterSlide(SlideMaster $slide = null)

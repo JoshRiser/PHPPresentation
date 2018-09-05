@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Style;
+namespace foTYPE\PhpPresentation\Tests\Style;
 
-use PhpOffice\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Alignment;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class AlignmentTest extends TestCase
 {

@@ -15,34 +15,34 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Chart;
+namespace foTYPE\PhpPresentation\Shape\Chart;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractType;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Shape\Chart\Type\AbstractType;
 
 /**
- * \PhpOffice\PhpPresentation\Shape\Chart\PlotArea
+ * \foTYPE\PhpPresentation\Shape\Chart\PlotArea
  */
 class PlotArea implements ComparableInterface
 {
     /**
      * Type
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractType
+     * @var \foTYPE\PhpPresentation\Shape\Chart\Type\AbstractType
      */
     private $type;
 
     /**
      * Axis X
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @var \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     private $axisX;
 
     /**
      * Axis Y
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @var \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     private $axisY;
 
@@ -75,7 +75,7 @@ class PlotArea implements ComparableInterface
     private $height = 0;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Chart\PlotArea instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Chart\PlotArea instance
      */
     public function __construct()
     {
@@ -108,8 +108,8 @@ class PlotArea implements ComparableInterface
     /**
      * Set type
      *
-     * @param \PhpOffice\PhpPresentation\Shape\Chart\Type\AbstractType $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\PlotArea
+     * @param \foTYPE\PhpPresentation\Shape\Chart\Type\AbstractType $value
+     * @return \foTYPE\PhpPresentation\Shape\Chart\PlotArea
      */
     public function setType(Type\AbstractType $value)
     {
@@ -121,7 +121,7 @@ class PlotArea implements ComparableInterface
     /**
      * Get Axis X
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     public function getAxisX()
     {
@@ -131,7 +131,7 @@ class PlotArea implements ComparableInterface
     /**
      * Get Axis Y
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Axis
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Axis
      */
     public function getAxisY()
     {
@@ -152,7 +152,7 @@ class PlotArea implements ComparableInterface
      * Set OffsetX (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setOffsetX($value = 0)
     {
@@ -175,7 +175,7 @@ class PlotArea implements ComparableInterface
      * Set OffsetY (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setOffsetY($value = 0)
     {
@@ -198,7 +198,7 @@ class PlotArea implements ComparableInterface
      * Set Width (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setWidth($value = 0)
     {
@@ -221,7 +221,7 @@ class PlotArea implements ComparableInterface
      * Set Height (as a fraction of the chart)
      *
      * @param float|int $value
-     * @return \PhpOffice\PhpPresentation\Shape\Chart\Title
+     * @return \foTYPE\PhpPresentation\Shape\Chart\Title
      */
     public function setHeight($value = 0)
     {

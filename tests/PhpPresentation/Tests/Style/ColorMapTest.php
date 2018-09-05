@@ -15,9 +15,9 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Style;
+namespace foTYPE\PhpPresentation\Tests\Style;
 
-use PhpOffice\PhpPresentation\Style\ColorMap;
+use foTYPE\PhpPresentation\Style\ColorMap;
 use PHPUnit\Framework\TestCase;
 
 class ColorMapTest extends TestCase

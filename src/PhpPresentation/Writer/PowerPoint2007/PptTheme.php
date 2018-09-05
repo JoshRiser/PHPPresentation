@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide;
 use PhpOffice\Common\XMLWriter;
 
 class PptTheme extends AbstractDecoratorWriter

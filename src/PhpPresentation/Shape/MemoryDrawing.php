@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\Shape\Drawing\Gd;
+use foTYPE\PhpPresentation\Shape\Drawing\Gd;
 
 /**
  * Memory drawing shape

@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\HashTable;
-use PhpOffice\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\HashTable;
+use foTYPE\PhpPresentation\Slide;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for HashTable
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\HashTable
+ * @coversDefaultClass foTYPE\PhpPresentation\HashTable
  */
 class HashTableTest extends TestCase
 {

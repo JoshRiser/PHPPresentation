@@ -15,18 +15,18 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart;
-use PhpOffice\PhpPresentation\Shape\Chart\Axis;
-use PhpOffice\PhpPresentation\Shape\Chart\PlotArea;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Bar3D;
+use foTYPE\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Chart\Axis;
+use foTYPE\PhpPresentation\Shape\Chart\PlotArea;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Bar3D;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PlotArea element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\PlotArea
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\PlotArea
  */
 class PlotAreaTest extends TestCase
 {

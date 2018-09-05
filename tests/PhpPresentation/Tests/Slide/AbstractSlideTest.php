@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Slide;
+namespace foTYPE\PhpPresentation\Tests\Slide;
 
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Slide\AbstractSlide;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Slide\AbstractSlide;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Table element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\AbstractGraphic
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\AbstractGraphic
  */
 class AbstractSlideTest extends TestCase
 {

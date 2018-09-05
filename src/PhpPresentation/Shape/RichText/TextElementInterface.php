@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\RichText;
+namespace foTYPE\PhpPresentation\Shape\RichText;
 
 /**
  * Rich text element interface
@@ -33,14 +33,14 @@ interface TextElementInterface
      * Set text
      *
      * @param                                            $pText string   Text
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setText($pText = '');
 
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont();
 
@@ -51,7 +51,7 @@ interface TextElementInterface
 
     /**
      * @param string $lang
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setLanguage($lang);
 

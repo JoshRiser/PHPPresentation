@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape;
+namespace foTYPE\PhpPresentation\Shape;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
  * Abstract drawing
@@ -68,7 +68,7 @@ abstract class AbstractGraphic extends AbstractShape implements ComparableInterf
     public $relationId = null;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Slide\AbstractDrawing
+     * Create a new \foTYPE\PhpPresentation\Slide\AbstractDrawing
      */
     public function __construct()
     {
@@ -152,7 +152,7 @@ abstract class AbstractGraphic extends AbstractShape implements ComparableInterf
      * Set Width
      *
      * @param  int $pValue
-     * @return \PhpOffice\PhpPresentation\Shape\AbstractGraphic
+     * @return \foTYPE\PhpPresentation\Shape\AbstractGraphic
      */
     public function setWidth($pValue = 0)
     {
@@ -172,7 +172,7 @@ abstract class AbstractGraphic extends AbstractShape implements ComparableInterf
      * Set Height
      *
      * @param  int $pValue
-     * @return \PhpOffice\PhpPresentation\Shape\AbstractGraphic
+     * @return \foTYPE\PhpPresentation\Shape\AbstractGraphic
      */
     public function setHeight($pValue = 0)
     {
@@ -193,7 +193,7 @@ abstract class AbstractGraphic extends AbstractShape implements ComparableInterf
      * @author Vincent@luo MSN:kele_100@hotmail.com
      * @param  int $width
      * @param  int $height
-     * @return \PhpOffice\PhpPresentation\Shape\AbstractGraphic
+     * @return \foTYPE\PhpPresentation\Shape\AbstractGraphic
      */
     public function setWidthAndHeight($width = 0, $height = 0)
     {
@@ -226,7 +226,7 @@ abstract class AbstractGraphic extends AbstractShape implements ComparableInterf
      * Set ResizeProportional
      *
      * @param  boolean                         $pValue
-     * @return \PhpOffice\PhpPresentation\Shape\AbstractGraphic
+     * @return \foTYPE\PhpPresentation\Shape\AbstractGraphic
      */
     public function setResizeProportional($pValue = true)
     {

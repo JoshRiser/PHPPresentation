@@ -15,16 +15,16 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Chart;
+namespace foTYPE\PhpPresentation\Tests\Shape\Chart;
 
-use PhpOffice\PhpPresentation\Shape\Chart\Axis;
-use PhpOffice\PhpPresentation\Style\Font;
+use foTYPE\PhpPresentation\Shape\Chart\Axis;
+use foTYPE\PhpPresentation\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Axis element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Chart\Axis
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Chart\Axis
  */
 class AxisTest extends TestCase
 {
@@ -79,7 +79,7 @@ class AxisTest extends TestCase
     {
         $object = new Axis();
 
-        $oMock = $this->getMockBuilder('PhpOffice\PhpPresentation\Shape\Chart\Gridlines')->getMock();
+        $oMock = $this->getMockBuilder('foTYPE\PhpPresentation\Shape\Chart\Gridlines')->getMock();
 
         $this->assertInstanceOf('PhpOffice\\PhpPresentation\\Shape\\Chart\\Axis', $object->setMajorGridlines($oMock));
         $this->assertInstanceOf('PhpOffice\\PhpPresentation\\Shape\\Chart\\Gridlines', $object->getMajorGridlines());

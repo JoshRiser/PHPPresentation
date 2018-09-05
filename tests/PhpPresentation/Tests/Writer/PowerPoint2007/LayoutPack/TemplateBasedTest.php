@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\PowerPoint2007\LayoutPack;
+namespace foTYPE\PhpPresentation\Tests\Writer\PowerPoint2007\LayoutPack;
 
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\PackDefault;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\PackDefault;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\TemplateBased;
 use PHPUnit\Framework\TestCase;
 
 /**

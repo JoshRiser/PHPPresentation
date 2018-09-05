@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer;
+namespace foTYPE\PhpPresentation\Tests\Writer;
 
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Writer\PowerPoint2007;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Writer\PowerPoint2007;
 
 /**
  * Test class for PowerPoint2007

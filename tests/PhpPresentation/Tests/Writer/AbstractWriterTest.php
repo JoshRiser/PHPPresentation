@@ -15,9 +15,9 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Writer;
+namespace foTYPE\PhpPresentation\Tests\Writer;
 
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\PhpPresentation;
 use PHPUnit\Framework\TestCase;
 
 require 'AbstractWriter.php';
@@ -34,7 +34,7 @@ class AbstractWriterTest extends TestCase
      */
     public function testConstruct()
     {
-        $oStubWriter = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Writer\AbstractWriter');
+        $oStubWriter = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Writer\AbstractWriter');
         $oStubZip = $this->getMockForAbstractClass('PhpOffice\Common\Adapter\Zip\ZipInterface');
 
         $this->assertNull($oStubWriter->getZipAdapter());

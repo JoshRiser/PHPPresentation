@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\RichText;
+namespace foTYPE\PhpPresentation\Shape\RichText;
 
-use PhpOffice\PhpPresentation\Shape\Hyperlink;
+use foTYPE\PhpPresentation\Shape\Hyperlink;
 
 /**
  * Rich text text element
@@ -39,12 +39,12 @@ class TextElement implements TextElementInterface
     /**
      * Hyperlink
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Hyperlink
+     * @var \foTYPE\PhpPresentation\Shape\Hyperlink
      */
     protected $hyperlink;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\RichText\TextElement instance
+     * Create a new \foTYPE\PhpPresentation\Shape\RichText\TextElement instance
      *
      * @param string $pText Text
      */
@@ -68,7 +68,7 @@ class TextElement implements TextElementInterface
      * Set text
      *
      * @param                                            $pText string   Text
-     * @return \PhpOffice\PhpPresentation\Shape\RichText\TextElementInterface
+     * @return \foTYPE\PhpPresentation\Shape\RichText\TextElementInterface
      */
     public function setText($pText = '')
     {
@@ -80,7 +80,7 @@ class TextElement implements TextElementInterface
     /**
      * Get font
      *
-     * @return \PhpOffice\PhpPresentation\Style\Font
+     * @return \foTYPE\PhpPresentation\Style\Font
      */
     public function getFont()
     {
@@ -100,7 +100,7 @@ class TextElement implements TextElementInterface
     /**
      * Get Hyperlink
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Hyperlink
+     * @return \foTYPE\PhpPresentation\Shape\Hyperlink
      */
     public function getHyperlink()
     {
@@ -114,9 +114,9 @@ class TextElement implements TextElementInterface
     /**
      * Set Hyperlink
      *
-     * @param  \PhpOffice\PhpPresentation\Shape\Hyperlink $pHyperlink
+     * @param  \foTYPE\PhpPresentation\Shape\Hyperlink $pHyperlink
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\AbstractShape
+     * @return \foTYPE\PhpPresentation\AbstractShape
      */
     public function setHyperlink(Hyperlink $pHyperlink = null)
     {

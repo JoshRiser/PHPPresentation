@@ -15,22 +15,22 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer;
+namespace foTYPE\PhpPresentation\Writer;
 
 use PhpOffice\Common\Adapter\Zip\ZipArchiveAdapter;
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Drawing\AbstractDrawingAdapter;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\Serialized
+ * \foTYPE\PhpPresentation\Writer\Serialized
  */
 class Serialized extends AbstractWriter implements WriterInterface
 {
     /**
-     * Create a new \PhpOffice\PhpPresentation\Writer\Serialized
+     * Create a new \foTYPE\PhpPresentation\Writer\Serialized
      *
-     * @param \PhpOffice\PhpPresentation\PhpPresentation $pPhpPresentation
+     * @param \foTYPE\PhpPresentation\PhpPresentation $pPhpPresentation
      */
     public function __construct(PhpPresentation $pPhpPresentation = null)
     {

@@ -15,14 +15,14 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\GeometryCalculator;
-use PhpOffice\PhpPresentation\ShapeContainerInterface;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\GeometryCalculator;
+use foTYPE\PhpPresentation\ShapeContainerInterface;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Shape\RichText;
 
 /**
  * Note class
@@ -39,7 +39,7 @@ class Note implements ComparableInterface, ShapeContainerInterface
     /**
      * Collection of shapes
      *
-     * @var \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+     * @var \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
      */
     private $shapeCollection = null;
 
@@ -105,7 +105,7 @@ class Note implements ComparableInterface, ShapeContainerInterface
     /**
      * Get collection of shapes
      *
-     * @return \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+     * @return \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
      */
     public function getShapeCollection()
     {
@@ -115,8 +115,8 @@ class Note implements ComparableInterface, ShapeContainerInterface
     /**
      * Add shape to slide
      *
-     * @param  \PhpOffice\PhpPresentation\AbstractShape $shape
-     * @return \PhpOffice\PhpPresentation\AbstractShape
+     * @param  \foTYPE\PhpPresentation\AbstractShape $shape
+     * @return \foTYPE\PhpPresentation\AbstractShape
      */
     public function addShape(AbstractShape $shape)
     {
@@ -128,7 +128,7 @@ class Note implements ComparableInterface, ShapeContainerInterface
     /**
      * Create rich text shape
      *
-     * @return \PhpOffice\PhpPresentation\Shape\RichText
+     * @return \foTYPE\PhpPresentation\Shape\RichText
      */
     public function createRichTextShape()
     {

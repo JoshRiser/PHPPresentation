@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\PhpPresentation;
 
 /**
- * \PhpOffice\PhpPresentation\Slide\Iterator
+ * \foTYPE\PhpPresentation\Slide\Iterator
  *
  * Used to iterate slides in PhpPresentation
  */
@@ -29,7 +29,7 @@ class Iterator extends \IteratorIterator
     /**
      * Presentation to iterate
      *
-     * @var \PhpOffice\PhpPresentation\PhpPresentation
+     * @var \foTYPE\PhpPresentation\PhpPresentation
      */
     private $subject;
 
@@ -68,9 +68,9 @@ class Iterator extends \IteratorIterator
     }
 
     /**
-     * Current \PhpOffice\PhpPresentation\Slide
+     * Current \foTYPE\PhpPresentation\Slide
      *
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function current()
     {
@@ -96,7 +96,7 @@ class Iterator extends \IteratorIterator
     }
 
     /**
-     * More \PhpOffice\PhpPresentation\Slide instances available?
+     * More \foTYPE\PhpPresentation\Slide instances available?
      *
      * @return boolean
      */

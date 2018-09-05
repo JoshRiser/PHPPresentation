@@ -15,18 +15,18 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
+namespace foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack;
 
-use PhpOffice\PhpPresentation\Slide\Layout;
+use foTYPE\PhpPresentation\Slide\Layout;
 
 /**
- * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\Default
+ * \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\Default
  * @deprecated 0.7
  */
 class PackDefault extends AbstractLayoutPack
 {
     /**
-     * \PhpOffice\PhpPresentation\Writer\PowerPoint2007\LayoutPack\Default
+     * \foTYPE\PhpPresentation\Writer\PowerPoint2007\LayoutPack\Default
      */
     public function __construct()
     {

@@ -14,20 +14,20 @@
  * @copyright   2009-2015 PHPPresentation contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace PhpOffice\PhpPresentation\Slide;
+namespace foTYPE\PhpPresentation\Slide;
 
-use PhpOffice\PhpPresentation\AbstractShape;
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\GeometryCalculator;
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Chart;
-use PhpOffice\PhpPresentation\Shape\Drawing\File;
-use PhpOffice\PhpPresentation\Shape\Group;
-use PhpOffice\PhpPresentation\Shape\Line;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Shape\Table;
-use PhpOffice\PhpPresentation\ShapeContainerInterface;
-use PhpOffice\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\AbstractShape;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\GeometryCalculator;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Chart;
+use foTYPE\PhpPresentation\Shape\Drawing\File;
+use foTYPE\PhpPresentation\Shape\Group;
+use foTYPE\PhpPresentation\Shape\Line;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Shape\Table;
+use foTYPE\PhpPresentation\ShapeContainerInterface;
+use foTYPE\PhpPresentation\Slide;
 
 abstract class AbstractSlide implements ComparableInterface, ShapeContainerInterface
 {
@@ -37,14 +37,14 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     protected $relsIndex;
     /**
      *
-     * @var \PhpOffice\PhpPresentation\Slide\Transition
+     * @var \foTYPE\PhpPresentation\Slide\Transition
      */
     protected $slideTransition;
 
     /**
      * Collection of shapes
      *
-     * @var \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+     * @var \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
      */
     protected $shapeCollection = null;
     /**
@@ -99,7 +99,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Get collection of shapes
      *
-     * @return \ArrayObject|\PhpOffice\PhpPresentation\AbstractShape[]
+     * @return \ArrayObject|\foTYPE\PhpPresentation\AbstractShape[]
      */
     public function getShapeCollection()
     {
@@ -120,8 +120,8 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Add shape to slide
      *
-     * @param  \PhpOffice\PhpPresentation\AbstractShape $shape
-     * @return \PhpOffice\PhpPresentation\AbstractShape
+     * @param  \foTYPE\PhpPresentation\AbstractShape $shape
+     * @return \foTYPE\PhpPresentation\AbstractShape
      */
     public function addShape(AbstractShape $shape)
     {
@@ -228,7 +228,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Create rich text shape
      *
-     * @return \PhpOffice\PhpPresentation\Shape\RichText
+     * @return \foTYPE\PhpPresentation\Shape\RichText
      */
     public function createRichTextShape()
     {
@@ -244,7 +244,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
      * @param  int $fromY Starting point y offset
      * @param  int $toX Ending point x offset
      * @param  int $toY Ending point y offset
-     * @return \PhpOffice\PhpPresentation\Shape\Line
+     * @return \foTYPE\PhpPresentation\Shape\Line
      */
     public function createLineShape($fromX, $fromY, $toX, $toY)
     {
@@ -256,7 +256,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Create chart shape
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Chart
+     * @return \foTYPE\PhpPresentation\Shape\Chart
      */
     public function createChartShape()
     {
@@ -268,7 +268,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Create drawing shape
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Drawing\File
+     * @return \foTYPE\PhpPresentation\Shape\Drawing\File
      */
     public function createDrawingShape()
     {
@@ -281,7 +281,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
      * Create table shape
      *
      * @param  int $columns Number of columns
-     * @return \PhpOffice\PhpPresentation\Shape\Table
+     * @return \foTYPE\PhpPresentation\Shape\Table
      */
     public function createTableShape($columns = 1)
     {
@@ -293,7 +293,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Creates a group within this slide
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Group
+     * @return \foTYPE\PhpPresentation\Shape\Group
      */
     public function createGroup()
     {
@@ -315,8 +315,8 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
     /**
      * Re-bind parent
      *
-     * @param  \PhpOffice\PhpPresentation\PhpPresentation $parent
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @param  \foTYPE\PhpPresentation\PhpPresentation $parent
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function rebindParent(PhpPresentation $parent)
     {
@@ -345,7 +345,7 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
 
     /**
      *
-     * @return \PhpOffice\PhpPresentation\Slide\Transition
+     * @return \foTYPE\PhpPresentation\Slide\Transition
      */
     public function getTransition()
     {
@@ -354,8 +354,8 @@ abstract class AbstractSlide implements ComparableInterface, ShapeContainerInter
 
     /**
      *
-     * @param \PhpOffice\PhpPresentation\Slide\Transition $transition
-     * @return \PhpOffice\PhpPresentation\Slide
+     * @param \foTYPE\PhpPresentation\Slide\Transition $transition
+     * @return \foTYPE\PhpPresentation\Slide
      */
     public function setTransition(Transition $transition = null)
     {

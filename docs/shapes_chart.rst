@@ -22,7 +22,7 @@ For each gridline, you can custom the width (in points), the fill type and the f
 
 .. code-block:: php
 
-    use \PhpOffice\PhpPresentation\Shape\Chart\Gridlines;
+    use \foTYPE\PhpPresentation\Shape\Chart\Gridlines;
 
     $oLine = new Line();
 
@@ -39,7 +39,7 @@ For resetting them, you pass null as parameter to these methods.
 
 .. code-block:: php
 
-    use \PhpOffice\PhpPresentation\Shape\Chart\Gridlines;
+    use \foTYPE\PhpPresentation\Shape\Chart\Gridlines;
 
     $oLine = new Line();
 
@@ -64,7 +64,7 @@ For resetting them, you pass Axis::TICK_MARK_NONE as parameter to these methods.
 
 .. code-block:: php
 
-    use \PhpOffice\PhpPresentation\Shape\Chart\Axis;
+    use \foTYPE\PhpPresentation\Shape\Chart\Axis;
 
     $oLine = new Line();
 
@@ -78,7 +78,7 @@ For resetting them, you pass null as parameter to these methods.
 
 .. code-block:: php
 
-    use \PhpOffice\PhpPresentation\Shape\Chart\Axis;
+    use \foTYPE\PhpPresentation\Shape\Chart\Axis;
 
     $oLine = new Line();
 
@@ -124,7 +124,7 @@ You can custom the font of a serie.
 You can custom the marker of a serie, for Line & Scatter charts.
 
 .. code-block:: php
-    use \PhpOffice\PhpPresentation\Shape\Chart\Marker;
+    use \foTYPE\PhpPresentation\Shape\Chart\Marker;
 
     $oSeries = new Series('Downloads', $seriesData);
     $oMarker = $oSeries->getMarker();
@@ -133,7 +133,7 @@ You can custom the marker of a serie, for Line & Scatter charts.
 You can custom the line of a serie, for Line & Scatter charts.
 
 .. code-block:: php
-    use \PhpOffice\PhpPresentation\Style\Outline;
+    use \foTYPE\PhpPresentation\Style\Outline;
 
     $oOutline = new Outline();
     // Define the color

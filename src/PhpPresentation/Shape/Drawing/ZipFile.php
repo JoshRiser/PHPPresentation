@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Shape\Drawing;
 
 use PhpOffice\Common\File as CommonFile;
 
@@ -25,7 +25,7 @@ class ZipFile extends AbstractDrawingAdapter
      * Set Path
      *
      * @param  string                      $pValue      File path
-     * @return \PhpOffice\PhpPresentation\Shape\Drawing
+     * @return \foTYPE\PhpPresentation\Shape\Drawing
      */
     public function setPath($pValue = '')
     {

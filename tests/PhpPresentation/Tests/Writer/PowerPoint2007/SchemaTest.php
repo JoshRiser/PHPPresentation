@@ -1,24 +1,24 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Tests\Writer\PowerPoint2007;
+namespace foTYPE\PhpPresentation\Tests\Writer\PowerPoint2007;
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Shape\Chart\Series;
-use PhpOffice\PhpPresentation\Shape\Chart\Type\Line;
-use PhpOffice\PhpPresentation\Shape\Comment;
-use PhpOffice\PhpPresentation\Shape\Placeholder;
-use PhpOffice\PhpPresentation\Shape\RichText;
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Animation;
-use PhpOffice\PhpPresentation\Slide\Transition;
-use PhpOffice\PhpPresentation\Style\Alignment;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
-use PhpOffice\PhpPresentation\Style\Shadow;
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
-use PhpOffice\PhpPresentation\Shape\Drawing;
-use PhpOffice\PhpPresentation\Shape\Media;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Shape\Chart\Series;
+use foTYPE\PhpPresentation\Shape\Chart\Type\Line;
+use foTYPE\PhpPresentation\Shape\Comment;
+use foTYPE\PhpPresentation\Shape\Placeholder;
+use foTYPE\PhpPresentation\Shape\RichText;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Animation;
+use foTYPE\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\Style\Alignment;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Style\Shadow;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Shape\Drawing;
+use foTYPE\PhpPresentation\Shape\Media;
 use Symfony\Component\Finder\SplFileInfo;
 
 class SchemaTest extends PhpPresentationTestCase
@@ -361,11 +361,11 @@ class SchemaTest extends PhpPresentationTestCase
         $currentSlide->addShape(clone $oShapeDrawing);
         $currentSlide->addShape(clone $oShapeRichText);
 
-        $oAuthor = new \PhpOffice\PhpPresentation\Shape\Comment\Author();
+        $oAuthor = new \foTYPE\PhpPresentation\Shape\Comment\Author();
         $oAuthor->setName('Progi1984');
         $oAuthor->setInitials('P');
 
-        $oComment1 = new \PhpOffice\PhpPresentation\Shape\Comment();
+        $oComment1 = new \foTYPE\PhpPresentation\Shape\Comment();
         $oComment1->setText('Text A');
         $oComment1->setOffsetX(10);
         $oComment1->setOffsetY(55);
@@ -373,7 +373,7 @@ class SchemaTest extends PhpPresentationTestCase
         $oComment1->setAuthor($oAuthor);
         $currentSlide->addShape($oComment1);
 
-        $oComment2 = new \PhpOffice\PhpPresentation\Shape\Comment();
+        $oComment2 = new \foTYPE\PhpPresentation\Shape\Comment();
         $oComment2->setText('Text B');
         $oComment2->setOffsetX(170);
         $oComment2->setOffsetY(180);

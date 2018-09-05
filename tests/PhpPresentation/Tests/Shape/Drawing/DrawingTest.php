@@ -15,9 +15,9 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Shape\Drawing;
 
-use PhpOffice\PhpPresentation\Tests\Shape\Drawing\DrawingTest;
+use foTYPE\PhpPresentation\Tests\Shape\Drawing\DrawingTest;
 
 function function_exists($function)
 {
@@ -27,10 +27,10 @@ function function_exists($function)
     return \function_exists($function);
 }
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Drawing;
+namespace foTYPE\PhpPresentation\Tests\Shape\Drawing;
 
 // @codingStandardsIgnoreStart
-use PhpOffice\PhpPresentation\Tests\PhpPresentationTestCase;
+use foTYPE\PhpPresentation\Tests\PhpPresentationTestCase;
 
 // @codingStandardsIgnoreEnd
 class DrawingTest extends PhpPresentationTestCase

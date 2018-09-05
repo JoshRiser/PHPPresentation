@@ -15,21 +15,21 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Slide\SlideLayout;
+use foTYPE\PhpPresentation\Slide\SlideLayout;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Slide\SlideLayout
+ * @coversDefaultClass foTYPE\PhpPresentation\Slide\SlideLayout
  */
 class SlideLayoutTest extends TestCase
 {
     public function testBase()
     {
-        $mockSlideMaster = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\SlideMaster');
+        $mockSlideMaster = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\SlideMaster');
 
         $object = new SlideLayout($mockSlideMaster);
         $this->assertInstanceOf('PhpOffice\\PhpPresentation\\Slide\\AbstractSlide', $object);
@@ -40,7 +40,7 @@ class SlideLayoutTest extends TestCase
     public function testLayoutName()
     {
         // Mocks
-        $mockSlideMaster = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\SlideMaster');
+        $mockSlideMaster = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\SlideMaster');
 
         // Expected
         $expectedLayoutName = 'Title'.rand(1, 100);
@@ -55,7 +55,7 @@ class SlideLayoutTest extends TestCase
     public function testSlideMaster()
     {
         // Mocks
-        $mockSlideMaster = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\SlideMaster');
+        $mockSlideMaster = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\SlideMaster');
 
         $object = new SlideLayout($mockSlideMaster);
 

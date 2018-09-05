@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Shape\Table;
+namespace foTYPE\PhpPresentation\Shape\Table;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\Style\Fill;
 
 /**
  * Table row
@@ -28,14 +28,14 @@ class Row implements ComparableInterface
     /**
      * Cells
      *
-     * @var \PhpOffice\PhpPresentation\Shape\Table\Cell[]
+     * @var \foTYPE\PhpPresentation\Shape\Table\Cell[]
      */
     private $cells;
 
     /**
      * Fill
      *
-     * @var \PhpOffice\PhpPresentation\Style\Fill
+     * @var \foTYPE\PhpPresentation\Style\Fill
      */
     private $fill;
 
@@ -61,7 +61,7 @@ class Row implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Shape\Table\Row instance
+     * Create a new \foTYPE\PhpPresentation\Shape\Table\Row instance
      *
      * @param int $columns Number of columns
      */
@@ -83,7 +83,7 @@ class Row implements ComparableInterface
      * @param  int $cell Cell number
      * @param  boolean $exceptionAsNull Return a null value instead of an exception?
      * @throws \Exception
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Cell
+     * @return \foTYPE\PhpPresentation\Shape\Table\Cell
      */
     public function getCell($cell = 0, $exceptionAsNull = false)
     {
@@ -100,7 +100,7 @@ class Row implements ComparableInterface
     /**
      * Get cells
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Cell[]
+     * @return \foTYPE\PhpPresentation\Shape\Table\Cell[]
      */
     public function getCells()
     {
@@ -110,7 +110,7 @@ class Row implements ComparableInterface
     /**
      * Next cell (moves one cell to the right)
      *
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Cell
+     * @return \foTYPE\PhpPresentation\Shape\Table\Cell
      * @throws \Exception
      */
     public function nextCell()
@@ -126,7 +126,7 @@ class Row implements ComparableInterface
     /**
      * Get fill
      *
-     * @return \PhpOffice\PhpPresentation\Style\Fill
+     * @return \foTYPE\PhpPresentation\Style\Fill
      */
     public function getFill()
     {
@@ -136,8 +136,8 @@ class Row implements ComparableInterface
     /**
      * Set fill
      *
-     * @param  \PhpOffice\PhpPresentation\Style\Fill      $fill
-     * @return \PhpOffice\PhpPresentation\Shape\Table\Row
+     * @param  \foTYPE\PhpPresentation\Style\Fill      $fill
+     * @return \foTYPE\PhpPresentation\Shape\Table\Row
      */
     public function setFill(Fill $fill)
     {
@@ -160,7 +160,7 @@ class Row implements ComparableInterface
      * Set height
      *
      * @param  int                          $value
-     * @return \PhpOffice\PhpPresentation\Shape\RichText
+     * @return \foTYPE\PhpPresentation\Shape\RichText
      */
     public function setHeight($value = 0)
     {

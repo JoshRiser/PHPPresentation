@@ -2,10 +2,10 @@
 
 include_once 'Sample_Header.php';
 
-use PhpOffice\PhpPresentation\PhpPresentation;
-use PhpOffice\PhpPresentation\Style\Border;
-use PhpOffice\PhpPresentation\Style\Color;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Style\Border;
+use foTYPE\PhpPresentation\Style\Color;
+use foTYPE\PhpPresentation\Style\Fill;
 
 // Create new PHPPresentation object
 echo date('H:i:s') . ' Create new PHPPresentation object'.EOL;
@@ -85,7 +85,7 @@ $oCell = $row->nextCell();
 $oCell->createTextRun('R2C1');
 $oCell->getActiveParagraph()->getAlignment()
 	->setMarginLeft(30)
-	->setTextDirection(\PhpOffice\PhpPresentation\Style\Alignment::TEXT_DIRECTION_VERTICAL_270);
+	->setTextDirection(\foTYPE\PhpPresentation\Style\Alignment::TEXT_DIRECTION_VERTICAL_270);
 $oCell = $row->nextCell();
 $oCell->createTextRun('R2C2');
 $oCell->getActiveParagraph()->getAlignment()

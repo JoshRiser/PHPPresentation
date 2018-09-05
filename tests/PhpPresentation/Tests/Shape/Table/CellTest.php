@@ -15,19 +15,19 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests\Shape\Table;
+namespace foTYPE\PhpPresentation\Tests\Shape\Table;
 
-use PhpOffice\PhpPresentation\Shape\Table\Cell;
-use PhpOffice\PhpPresentation\Shape\RichText\Paragraph;
-use PhpOffice\PhpPresentation\Shape\RichText\TextElement;
-use PhpOffice\PhpPresentation\Style\Borders;
-use PhpOffice\PhpPresentation\Style\Fill;
+use foTYPE\PhpPresentation\Shape\Table\Cell;
+use foTYPE\PhpPresentation\Shape\RichText\Paragraph;
+use foTYPE\PhpPresentation\Shape\RichText\TextElement;
+use foTYPE\PhpPresentation\Style\Borders;
+use foTYPE\PhpPresentation\Style\Fill;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for Cell element
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Shape\Cell
+ * @coversDefaultClass foTYPE\PhpPresentation\Shape\Cell
  */
 class CellTest extends TestCase
 {
@@ -132,7 +132,7 @@ class CellTest extends TestCase
 
     /**
      * @expectedException \Exception
-     * expectedExceptionMessage Invalid \PhpOffice\PhpPresentation\Shape\RichText\Paragraph[] array passed.
+     * expectedExceptionMessage Invalid \foTYPE\PhpPresentation\Shape\RichText\Paragraph[] array passed.
      */
     public function testParagraphsException()
     {

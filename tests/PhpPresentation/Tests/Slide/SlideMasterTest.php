@@ -15,15 +15,15 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Slide\SlideMaster;
+use foTYPE\PhpPresentation\Slide\SlideMaster;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\Slide\SlideMaster
+ * @coversDefaultClass foTYPE\PhpPresentation\Slide\SlideMaster
  */
 class SlideMasterTest extends TestCase
 {
@@ -44,7 +44,7 @@ class SlideMasterTest extends TestCase
         $object = new SlideMaster();
 
         // Mock Post
-        $mockSlideLayout = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\SlideLayout', array($object));
+        $mockSlideLayout = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\SlideLayout', array($object));
 
         $this->assertEmpty($object->getAllSlideLayouts());
         $this->assertInstanceOf('PhpOffice\\PhpPresentation\\Slide\\SlideLayout', $object->createSlideLayout());
@@ -55,10 +55,10 @@ class SlideMasterTest extends TestCase
     public function testSchemeColors()
     {
         // Mock Pre
-        $mockSchemeColorAccent1 = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Style\SchemeColor');
+        $mockSchemeColorAccent1 = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Style\SchemeColor');
         $mockSchemeColorAccent1->setValue('accent1');
         $mockSchemeColorAccent1->setRGB('ABCDEF');
-        $mockSchemeColorNew = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Style\SchemeColor');
+        $mockSchemeColorNew = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Style\SchemeColor');
         $mockSchemeColorNew->setValue('new');
         $mockSchemeColorNew->setRGB('ABCDEF');
 
@@ -77,7 +77,7 @@ class SlideMasterTest extends TestCase
     public function testTextStyles()
     {
         // Mock Pre
-        $mockTextStyle = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Style\TextStyle');
+        $mockTextStyle = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Style\TextStyle');
 
         $object = new SlideMaster();
 

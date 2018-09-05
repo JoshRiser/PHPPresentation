@@ -7,7 +7,7 @@
 
 ### Changes
 - PHP 7.1 is now supported - @Progi1984 GH-355
-- PhpOffice\PhpPresentation\Style\Color : Define only the transparency - @Progi1984 GH-370
+- foTYPE\PhpPresentation\Style\Color : Define only the transparency - @Progi1984 GH-370
 - PowerPoint2007 Reader : Background Color based on SchemeColor - @Progi1984 GH-397
 
 ### Features
@@ -70,10 +70,10 @@
 - PowerPoint2007 Writer : Bugfix for printing slide notes - @JewrassicPark @Progi1984 GH-179
 
 ### Changes
-- PhpOffice\PhpPresentation\Writer\ODPresentation : Move to Design Pattern Decorator - @Progi1984
-- PhpOffice\PhpPresentation\Writer\PowerPoint2007 : Move to Design Pattern Decorator - @Progi1984
-- PhpOffice\PhpPresentation\Shape\Type\AbstracType\getData has been deprecated for PhpOffice\PhpPresentation\Shape\Type\AbstracType\getSeries - @Progi1984 GH-169
-- PhpOffice\PhpPresentation\Shape\Type\AbstracType\setData has been deprecated for PhpOffice\PhpPresentation\Shape\Type\AbstracType\setSeries - @Progi1984 GH-169
+- foTYPE\PhpPresentation\Writer\ODPresentation : Move to Design Pattern Decorator - @Progi1984
+- foTYPE\PhpPresentation\Writer\PowerPoint2007 : Move to Design Pattern Decorator - @Progi1984
+- foTYPE\PhpPresentation\Shape\Type\AbstracType\getData has been deprecated for foTYPE\PhpPresentation\Shape\Type\AbstracType\getSeries - @Progi1984 GH-169
+- foTYPE\PhpPresentation\Shape\Type\AbstracType\setData has been deprecated for foTYPE\PhpPresentation\Shape\Type\AbstracType\setSeries - @Progi1984 GH-169
 - Added documentation for chart series (font, outline, marker) - @Progi1984 GH-169
 - Internal Structure for Drawing Shape - @Progi1984 GH-192
 - Documentation about manual installation - @danielbair GH-254
@@ -109,8 +109,8 @@
 - PowerPoint2007 Writer : Bugfix for opening PPTX on Mac - @thsteinmetz GH-89
 
 ### Changes
-- PhpOffice\PhpPresentation\getProperties has been deprecated for PhpOffice\PhpPresentation\getDocumentProperties - @Progi1984 GH-154
-- PhpOffice\PhpPresentation\setProperties has been deprecated for PhpOffice\PhpPresentation\setDocumentProperties - @Progi1984 GH-154
+- foTYPE\PhpPresentation\getProperties has been deprecated for foTYPE\PhpPresentation\getDocumentProperties - @Progi1984 GH-154
+- foTYPE\PhpPresentation\setProperties has been deprecated for foTYPE\PhpPresentation\setDocumentProperties - @Progi1984 GH-154
 - PhpOffice\PhpPowerpoint\Style\Alignment::setLevel can now be defined great than 8 - @Progi1984 GH-141
 
 ### Features
@@ -132,7 +132,7 @@
 - Fixed the sample in Readme.md - @Progi1984 GH-114
 
 ### Changes
-- PhpOffice\PhpPowerpoint becomes PhpOffice\PhpPresentation - @Progi1984 GH-25
+- PhpOffice\PhpPowerpoint becomes foTYPE\PhpPresentation - @Progi1984 GH-25
 - PhpOffice\PhpPowerpoint\Style\Font::setStriketrough has been removed : Use setStrikethrough - @Progi1984
 - PhpOffice\PhpPowerpoint\AbstractShape::getSlide has been removed - @Progi1984
 - PhpOffice\PhpPowerpoint\AbstractShape::setSlide has been removed - @Progi1984

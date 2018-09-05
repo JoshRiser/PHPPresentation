@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
 /**
- * PhpOffice\PhpPresentation\Style\ColorMap
+ * foTYPE\PhpPresentation\Style\ColorMap
  */
 class ColorMap
 {

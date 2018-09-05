@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Shape\Comment;
+namespace foTYPE\PhpPresentation\Shape\Comment;
 
 class Author
 {

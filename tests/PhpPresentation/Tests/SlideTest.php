@@ -15,17 +15,17 @@
  * @link        https://github.com/PHPOffice/PHPPresentation
  */
 
-namespace PhpOffice\PhpPresentation\Tests;
+namespace foTYPE\PhpPresentation\Tests;
 
-use PhpOffice\PhpPresentation\Slide;
-use PhpOffice\PhpPresentation\Slide\Transition;
-use PhpOffice\PhpPresentation\PhpPresentation;
+use foTYPE\PhpPresentation\Slide;
+use foTYPE\PhpPresentation\Slide\Transition;
+use foTYPE\PhpPresentation\PhpPresentation;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for PhpPresentation
  *
- * @coversDefaultClass PhpOffice\PhpPresentation\PhpPresentation
+ * @coversDefaultClass foTYPE\PhpPresentation\PhpPresentation
  */
 class SlideTest extends TestCase
 {
@@ -71,7 +71,7 @@ class SlideTest extends TestCase
 
     public function testAnimations()
     {
-        $oStub = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\Animation');
+        $oStub = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\Animation');
 
         $object = new Slide();
         $this->assertInternalType('array', $object->getAnimations());
@@ -89,7 +89,7 @@ class SlideTest extends TestCase
 
     public function testBackground()
     {
-        $oStub = $this->getMockForAbstractClass('PhpOffice\PhpPresentation\Slide\AbstractBackground');
+        $oStub = $this->getMockForAbstractClass('foTYPE\PhpPresentation\Slide\AbstractBackground');
 
         $object = new Slide();
         $this->assertNull($object->getBackground());

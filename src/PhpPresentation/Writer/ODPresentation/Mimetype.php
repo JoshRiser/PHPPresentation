@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpOffice\PhpPresentation\Writer\ODPresentation;
+namespace foTYPE\PhpPresentation\Writer\ODPresentation;
 
 class Mimetype extends AbstractDecoratorWriter
 {

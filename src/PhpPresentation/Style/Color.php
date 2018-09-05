@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpPresentation\Style;
+namespace foTYPE\PhpPresentation\Style;
 
-use PhpOffice\PhpPresentation\ComparableInterface;
+use foTYPE\PhpPresentation\ComparableInterface;
 
 /**
- * \PhpOffice\PhpPresentation\Style\Color
+ * \foTYPE\PhpPresentation\Style\Color
  */
 class Color implements ComparableInterface
 {
@@ -51,7 +51,7 @@ class Color implements ComparableInterface
     private $hashIndex;
 
     /**
-     * Create a new \PhpOffice\PhpPresentation\Style\Color
+     * Create a new \foTYPE\PhpPresentation\Style\Color
      *
      * @param string $pARGB
      */
@@ -75,7 +75,7 @@ class Color implements ComparableInterface
      * Set ARGB
      *
      * @param  string                    $pValue
-     * @return \PhpOffice\PhpPresentation\Style\Color
+     * @return \foTYPE\PhpPresentation\Style\Color
      */
     public function setARGB($pValue = self::COLOR_BLACK)
     {
@@ -141,7 +141,7 @@ class Color implements ComparableInterface
      *
      * @param  string $pValue
      * @param  string $pAlpha
-     * @return \PhpOffice\PhpPresentation\Style\Color
+     * @return \foTYPE\PhpPresentation\Style\Color
      */
     public function setRGB($pValue = '000000', $pAlpha = 'FF')
     {
